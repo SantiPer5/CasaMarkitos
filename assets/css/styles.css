@@ -1,0 +1,104 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #dee7e7;
+}
+
+/* Estilos de la Navbar */
+.navbar {
+    padding: 1rem;
+    background-color: #dee7e7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2B2B2B;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #2B2B2B;
+}
+
+/* Estilos del Header */
+header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1645526816847-74a7640b8b7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+}
+
+header p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px #000000;
+}
+
+/* Estilos del Contenido principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #4F4F4F;
+    line-height: 1.5;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
