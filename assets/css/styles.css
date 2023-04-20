@@ -78,27 +78,51 @@ footer {
     color: #fff;
     padding: 30px 0;
     font-size: 14px;
-  }
-  
-  .social-icons li {
+}
+
+.social-icons li {
     display: inline-block;
     margin-right: 20px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     color: #fff;
     font-size: 24px;
-  }
-  
-  .footer-links li {
+}
+
+.footer-links li {
     display: inline-block;
     margin-right: 20px;
-  }
-  
-  .footer-links a {
+}
+
+.footer-links a {
     color: #fff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+#quienes-somos {
+    background-color: #f8f8f8;
+    padding: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
   }
   
-  .footer-links a:hover {
-    text-decoration: underline;
+  #quienes-somos h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #quienes-somos p {
+    margin-bottom: 20px;
+  }
+  
+  #quienes-somos .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
