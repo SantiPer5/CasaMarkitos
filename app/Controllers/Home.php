@@ -8,26 +8,14 @@ class Home extends BaseController
     {
         return view('principal.html');
     }
-    public function contacto(){
-        echo view('componentes//header.html');
-        echo view("componentes//navbar.html");
-        echo view("componentes//footer.html");
+    
+    public function quienes_somos()
+    {
+        $data['titulo'] = 'Quienes Somos?';
+        return view('componentes/encabezado', $data)
+            ->include('componentes/navbar')
+            ->include('contenidos/quienes_somos')
+            ->include('componentes/footer');
     }
-    public function quienes_somos(){
-        echo view('componentes//header.html');
-        echo view("componentes//navbar.html");
-        echo view("componentes//footer.html");
-    }
-    public function comercializacion(){
-        echo view('componentes//header.html');
-        echo view("componentes//navbar.html");
-        echo view("componentes//footer.html");
-    }
-    public function term_usos(){
-        echo view('componentes//header.html');
-        echo view("componentes//navbar.html");
-        echo view("componentes//footer.html");
-    }
-}
+} 
 
-?>
