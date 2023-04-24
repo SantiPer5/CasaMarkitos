@@ -21,5 +21,23 @@ class Home extends BaseController
         echo view('front/quienes_somos');
         echo view('front/footer');
     }
+
+    public function comercializacion()
+    {
+        $data['titulo'] = 'Comercializacion';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('front/comercializacion');
+        echo view('front/footer');
+    }
+
+    public function contacto()
+    {
+        $data['titulo'] = 'Contacto';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('front/contacto');
+        echo view('front/footer');
+    }
 } 
 
