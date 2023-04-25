@@ -396,7 +396,7 @@ header p {
 }
 
 .parallax {
-    background-image: url(https://img.freepik.com/foto-gratis/hombre-joven-hermoso-que-trabaja-papeles_1150-7681.jpg?w=1060&t=st=1682345143~exp=1682345743~hmac=83a6d3d25101a1acc4ad765af5169e032af4ac6e1c74cb403700d10a68c8eec4);
+    background-image: url(../img/about_us/fondo-quienes.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -423,10 +423,10 @@ header p {
     text-decoration: none;
     color: black;
     font-weight: 500;
-    background-color: white;
+    background-color: #ffffffd4;
     bottom: 31%;
     left: calc(50% - 121.5px);
-    /* transform: translateX(-50%); */
+    border: 0.2px #515151;
     border-radius: 40px;
     padding: 8px 35px;
     font-size: 2rem;

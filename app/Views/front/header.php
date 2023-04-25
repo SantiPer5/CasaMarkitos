@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="CasaMarkitos es una distribuidora de productos de bazar y librería ubicada en El Colorado, Formosa, Argentina. Ofrecemos una amplia variedad de productos de alta calidad a precios competitivos. Desde útiles escolares hasta artículos de decoración para el hogar, en CasaMarkitos tenemos todo lo que necesitas para equipar tu hogar o negocio. ¡Visítanos ahora para descubrir nuestra amplia selección de productos!">
+    <meta name="keywords" content="CasaMarkitos, bazar, librería, El Colorado, Formosa, Argentina, productos de alta calidad, precios competitivos, útiles escolares, decoración para el hogar, equipar tu hogar, equipar tu negocio">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">

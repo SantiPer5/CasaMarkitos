@@ -25,7 +25,6 @@
     <!-- Contenido principal -->
     <div class="principal">
         <div class="container title-container">
-            <!-- <img src="assets\img\f9a6a9437f850c9aace8c28fc0df31a1.png" alt="logo de la empresa"> -->
             <h2>MAYORISTA Y MINORISTA ONLINE!!!</h2>
         </div>
 
@@ -44,7 +43,6 @@
 <!-- Carrousel productos -->
 <div class="ofertas">
     <div class="container title-container">
-        <!-- <img src="assets\img\f9a6a9437f850c9aace8c28fc0df31a1.png" alt="logo de la empresa"> -->
         <h3>NUESTRAS OFERTAS IMPERDIBLES!!!</h3>
     </div>
     
@@ -56,7 +54,7 @@
 
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://abrildistribuciones.com.ar/wp-content/uploads/2023/02/descarga-78.jpg" alt="">
+                    <img src="assets\img\foco-candela.jpg" alt="Foco Candela">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Foco Candela 60w</h4>
@@ -72,7 +70,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/128/573/products/birome-bic-x-501-6d8ee5abf6f91a5dc316682588859506-640-0.png" alt="">
+                    <img src="assets\img\birome-bic.png" alt="Birome marca BIC">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Birome BIC</h4>
@@ -88,7 +86,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://abrildistribuciones.com.ar/wp-content/uploads/2022/04/cinta-finita-300x300-1.png" alt="">
+                    <img src="assets\img\cinta-finita-sc.png" alt="Cinta scoch finita">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Cinta Finita</h4>
@@ -104,7 +102,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://abrildistribuciones.com.ar/wp-content/uploads/2021/10/pegatodo-20g-300x300.jpg" alt="">
+                    <img src="assets\img\pegatodo.jpg" alt="Pegatodo">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Pegatodo 20g</h4>
@@ -120,7 +118,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/261/715/products/1657556999151-81b88009484825313116588712546228-640-0.webp" alt="">
+                    <img src="assets\img\cuaderno-gloria.webp" alt="Cuaderno GLORIA">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Cuaderno GLORIA</h4>
@@ -136,7 +134,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_704785-MLA47972969338_102021-O.webp" alt="">
+                    <img src="assets\img\foco-osram.webp" alt="Foco Osram">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Foco OSRAM</h4>
@@ -152,7 +150,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="https://www.distribuidorapop.com.ar/wp-content/uploads/2019/10/pilas-eveready-d-grande-mayorista.jpg" alt="">
+                    <img src="assets\img\pilas-eveready.jpg" alt="Pilas Eveready">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Pilas eveready</h4>

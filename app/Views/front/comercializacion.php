@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="media">
-          <img src="https://img.freepik.com/vector-gratis/servicio-entrega-compras-linea-cliente_40876-2515.jpg?w=740&t=st=1682350498~exp=1682351098~hmac=68a8d883284a2a8105bf7ed604d553b1117af42c8ca73cd62ed7efaa2e84d30c" class="img-fluid" alt="Imagen 1">
+          <img src="assets\img\comerce\tipos-entregas.avif" class="img-fluid" alt="Imagen 1">
           <div class="media-body">
             <h3>Tipos de entregas</h3>
             <ul>
@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-4">
         <div class="media">
-          <img src="https://img.freepik.com/vector-gratis/concepto-pago-contra-reembolso_52683-51829.jpg?w=740&t=st=1682351420~exp=1682352020~hmac=8a9b6f5002aeda49c0726c30e9c6797832348cb394c160ba3a2971ee96c98a10" class="img-fluid" alt="Imagen 2">
+          <img src="assets\img\comerce\formas-envio.avif" class="img-fluid" alt="Imagen 2">
           <div class="media-body">
             <h3>Formas de envío</h3>
             <ul>
@@ -31,7 +31,7 @@
       </div>
       <div class="col-md-4">
         <div class="media">
-          <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-tecnologia-nfc_114360-14387.jpg?w=740&t=st=1682351540~exp=1682352140~hmac=a809e03195b05eb336f1f720c1014ae1112676201167840c5b21fcde41b91c3d" class="img-fluid" alt="Imagen 3">
+          <img src="assets\img\comerce\formas-pago.avif" class="img-fluid" alt="Imagen 3">
           <div class="media-body">
             <h3>Formas de pago</h3>
             <ul>

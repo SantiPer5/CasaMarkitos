@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index()
     {
-        $data ['titulo'] = 'inicio';
+        $data ['titulo'] = 'CasaMarkitos - Distribuidora de productos de bazar y librería en El Colorado, Formosa';
         echo view('front/header', $data);
         echo view('front/navbar');
         echo view('front/main');
