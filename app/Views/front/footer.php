@@ -18,7 +18,7 @@
         </div>
     </div>
 </section>
-    <div class="container">
+    <div class="container nosotros">
         <div class="row">
             <div class="col-md-4 col-sm-12 mb-md-0 mb-4">
                 <h5 class="text-uppercase">Nosotros</h5>
@@ -28,9 +28,9 @@
             <div class="col-md-4 col-sm-6 mb-md-0 mb-4">
                 <h5 class="text-uppercase">Contacto</h5>
                 <ul class="list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Buenos Aires, Argentina</li>
-                    <li><i class="fas fa-phone"></i> Teléfono: +54 11 12345678</li>
-                    <li><i class="fas fa-envelope"></i> Email: info@ejemplo.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. 25 de Mayo y Sarmiento, El Colorado, Formosa, Argentina</li>
+                    <li><i class="fas fa-phone"></i> Teléfono: +54 0370 4204158</li>
+                    <li><i class="fas fa-envelope"></i> Email: markitock@gmail.com</li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 mb-md-0 mb-4">
@@ -43,13 +43,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container terminos">
         <div class="row">
             <div class="col-md-6 col-sm-12 mb-md-0 mb-3">
                 <p>© 2023 CasaMarkitos Distribuciones</p>
             </div>
             <div class="col-md-6 col-sm-12 text-md-end text-sm-center">
-                <a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a>
+                <a href="<?php echo base_url('terminos')?>">Términos y condiciones</a> | <a href="#">Política de privacidad</a>
             </div>
         </div>
     </div>

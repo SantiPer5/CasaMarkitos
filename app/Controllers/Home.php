@@ -39,5 +39,14 @@ class Home extends BaseController
         echo view('front/contacto');
         echo view('front/footer');
     }
+
+    public function terminos()
+    {
+        $data['titulo'] = 'Terminos y Condiciones';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('front/terminos');
+        echo view('front/footer');
+    }
 } 
 

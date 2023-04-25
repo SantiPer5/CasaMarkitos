@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #023e8a;
-    --secondary-color: #0077b6;
+    --primary-color: #ffffff;
+    --secondary-color: #2c84b4;
     --gray-eleccion-c: #515151;
     --gray-eleccion: rgb(193, 193, 193);
     --very-light-pink: #c7c7c7;
     --text-input-field: #f7f7f7;
     --sm: 12px;
+    --font-main: 'Open Sans', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
 }
 
 
@@ -233,6 +235,7 @@ header p {
 }
 
 .container h2 {
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     color: #2B2B2B;
@@ -247,21 +250,55 @@ header p {
 
 /* principal-main */
 
+/* .principal{
+    border: solid red;
+} */
+
+.principal h2 {
+    font-family: var(--font-secondary);
+
+}
+
+
+/* principal-main fin */
+
+
+
 /* Ofertas */
 
-.ofertas h2{
-    margin: 2px;
+.ofertas .title-container {
+    margin: 0 auto;
     padding: 2px;
+    text-align: center;
     align-items: center;
+    /* border: solid salmon; */
 }
+
+.ofertas h3 {
+    font-family: var(--font-secondary);
+}
+
+/* .ofertas {
+    border: solid red;
+} */
 
 /* Swiper */
 
+.swiper {
+    max-width: 100%;
+
+}
+
+/* .swiper-wrapper{
+    border: solid #1d6ce2;
+}
+ */
 .swiper .swiper-container {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
+
 }
 
 .swiper .swiper-slide {
@@ -272,6 +309,7 @@ header p {
     border-radius: 15px;
     text-align: start;
     box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+    border: 0.1px solid rgba(196, 196, 196, 0.25);
 }
 
 .swiper .swiper-slide img {
@@ -284,6 +322,7 @@ header p {
 }
 
 .swiper .swiper-slide .card-description {
+    height: 150px;
     padding: 1rem 1rem;
 }
 
@@ -303,17 +342,260 @@ header p {
 }
 
 .swiper-button-next {
-    right: 26px;
-    
+    color: black;
+    right: 0px;
 }
 
 .swiper-button-prev {
-    left: 26px ;
+    color: black;
+    left: 0px;
+}
+
+.swiper .card-link button{
+    background-color: #e14949;
+    color: white;
+    border: 0.2px solid red;
+    text-transform: uppercase;
+}
+
+.swiper .card-link button:hover {
+    background-color: rgb(246, 0, 0);
+  }
+  
+.swiper .card-link button:active {
+    background-color: red;
+  }
+
+
+.swiper .card-price{
+    margin: 5px;
+    padding: 20px;
+    padding-right: 0;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
 
+/* QUIENES-SOMOS INICIO */
+/* Estilos para sección "Quienes somos" */
+
+.container-about-us {
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    /* height: 90vh; */
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(../img/about_us/about_us_bg.png); */
+    background-image: url(../img/about_us/wave-secondary.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.parallax {
+    background-image: url(https://img.freepik.com/foto-gratis/hombre-joven-hermoso-que-trabaja-papeles_1150-7681.jpg?w=1060&t=st=1682345143~exp=1682345743~hmac=83a6d3d25101a1acc4ad765af5169e032af4ac6e1c74cb403700d10a68c8eec4);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93.5vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+}
+
+.parallax h2 {
+    position: relative;
+    text-align: center;
+    top: 32%;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 10px 5px 20px rgba(0, 0, 0, .6);
+}
+
+.parallax a {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    bottom: 31%;
+    left: calc(50% - 121.5px);
+    /* transform: translateX(-50%); */
+    border-radius: 40px;
+    padding: 8px 35px;
+    font-size: 2rem;
+    transition: .3s all;
+    z-index: 9;
+}
+
+.parallax a i {
+    font-size: 1.7rem;
+    margin-left: 8px;
+}
+
+.parallax a:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, .5);
+}
+
+.parallax .wave {
+    position: absolute;
+    height: max-content;
+    width: 100%;
+    bottom: 0;
+}
 
 
+/* QUIENES-SOMOS FIN */
+
+/* CONTACTO */
+
+.contact {
+    padding: 100px 0;
+}
+
+.address h2,
+.form h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.address p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.form input,
+.form textarea {
+    background-color: #F5F5F5;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.form button[type=submit] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button[type=submit]:hover {
+    background-color: #555;
+}
+
+.map-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    /* border: none; */
+    margin-top: 30px;
+}
+
+
+/* CONTACTO FIN */
+
+/* COMERCIALIZACION */
+
+.comercializacion {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.comercializacion h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.comercializacion .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comercializacion .col-md-4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.comercializacion .icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #7fad39;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.comercializacion h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.comercializacion p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.comercializacion a {
+    color: #7fad39;
+    font-weight: 600;
+}
+
+.comercializacion a:hover {
+    color: #5c8031;
+    text-decoration: none;
+}
+
+.media {
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.comercializacion ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.comercializacion li {
+    padding-left: 1rem;
+    position: relative;
+}
+
+
+/* COMERCIALIZACION FIN */
 
 /* Estilos del Footer */
 .footer {
@@ -369,7 +651,7 @@ header p {
 }
 
 .newsletter {
-    background-color: #b1a8a8;
+    background-color: #e5e5e5;
     color: #fff;
 }
 
@@ -409,6 +691,13 @@ header p {
     font-size: 16px;
 }
 
+.nosotros {
+    padding: 1em;
+}
+
+.terminos {
+    padding: 1em;
+}
 
 #quienes-somos {
     background-color: #f8f8f8;
