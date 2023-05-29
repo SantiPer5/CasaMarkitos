@@ -9,24 +9,24 @@
           <p>El Colorado, Formosa, Argentina</p>
         </div>
         <div class="form">
-          <h2>Contáctanos</h2>
-          <form>
+          <h2>Contáctanos</h2>  <!-- Formulario de contacto -->
+          <?php echo form_open('contacto/enviarMensaje'); ?> <!-- Se envía a la función enviarMensaje del controlador ContactoController -->
             <div class="form-group">
-              <input type="text" placeholder="Nombre" required>
+              <?php echo form_input('nombre', '', 'placeholder="Nombre" required'); ?> <!-- Se crea un input de tipo texto con el nombre "nombre" -->
             </div>
             <div class="form-group">
-              <input type="email" placeholder="Correo electrónico" required>
+              <?php echo form_input('correo', '', 'type="email" placeholder="Correo electrónico" required'); ?>
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Asunto" required>
+              <?php echo form_input('asunto', '', 'placeholder="Asunto" required'); ?>
             </div>
             <div class="form-group">
-              <textarea placeholder="Mensaje" required></textarea>
+              <?php echo form_textarea('mensaje', '', 'placeholder="Mensaje" required'); ?>
             </div>
             <div class="form-group">
-              <button type="submit">Enviar</button>
+              <?php echo form_submit('enviar', 'Enviar'); ?>
             </div>
-          </form>
+          <?php echo form_close(); ?>
         </div>
       </div>
       <div class="col-lg-6 map-zone">

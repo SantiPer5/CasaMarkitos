@@ -48,5 +48,24 @@ class Home extends BaseController
         echo view('front/terminos');
         echo view('front/footer');
     }
+    
+    public function login()
+    {
+        $data['titulo'] = 'Iniciar Sesion';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('front/login');
+        echo view('front/footer');
+    }
+    
+    public function singup()
+    {
+        $data['titulo'] = 'Registrarme';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('front/singup');
+        echo view('front/footer');
+    }
+
 } 
 

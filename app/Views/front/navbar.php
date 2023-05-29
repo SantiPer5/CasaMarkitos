@@ -32,6 +32,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('contacto')?>">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url('login')?>">Iniciar Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url('singup')?>">Registrarme</a>
+                    </li>
                 </ul>
                 <!-- SearchBar -->
                 <form class="d-flex searchbar" role="search">

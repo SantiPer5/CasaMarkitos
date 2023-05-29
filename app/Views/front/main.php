@@ -150,7 +150,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                    <img src="assets\img\pilas-eveready.jpg" alt="Pilas Eveready">
+                    <img src="assets\img\pila-eveready.jpeg" alt="Pilas Eveready">
                     <div class="card-description">
                         <div class="card-title">
                             <h4>Pilas eveready</h4>

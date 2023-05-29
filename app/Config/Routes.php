@@ -35,6 +35,12 @@ $routes->add('/quienessomos', 'Home::quienes_somos');
 $routes->add('/comercializacion', 'Home::comercializacion'); 
 $routes->add('/contacto', 'Home::contacto');
 $routes->add('/terminos', 'Home::terminos');
+$routes->add('/login', 'Home::login');
+$routes->add('/singup', 'Home::singup');
+
+$routes->post('/enviar-mensaje', 'ContactoController::enviarMensaje');
+
+//$routes->post('/singup', 'Usuario_controller::singup');
 
 
 /*
