@@ -1,4 +1,22 @@
 <div class="container mt-5 login">
+	
+    <div style=" top: 5%; z-index: 1;">
+    <!--recuperamos datos con la función Flashdata para mostrarlos-->
+	<!-- Mostrar mensajes de exito -->
+    <?php if (session()->getFlashdata('success')) {
+        	echo " <div class='h4 text-center alert alert-info alert-dismissible' style='border-radius: 40px;'>
+        	    <button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('success') . "
+            	</div>";
+    	}
+		?>
+	<!-- Mostrar mensajes de error -->
+    <?php if (session()->getFlashdata('msg')) {
+        	echo " <div class='h4 text-center alert alert-warning alert-dismissible' style='border-radius: 40px;'>
+            	<button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('msg') . "
+            	</div>";
+    	}
+    	?>
+    </div>
 		<div class="row justify-content-center">
 			<div class="col-md-6">
 				<div class="card">
@@ -6,7 +24,8 @@
 						<h4>Iniciar sesión</h4>
 					</div>
 					<div class="card-body">
-						<form>
+						<!-- Formulario de inicio de sesion -->
+						<form method="post" action="<?= base_url('login')?>">
 							<div class="form-group">
 								<label for="email">Correo electrónico:</label>
 								<input type="email" class="form-control" id="email" name="email" required>

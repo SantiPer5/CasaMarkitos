@@ -63,7 +63,7 @@ class Home extends BaseController
         $data['titulo'] = 'Registrarme';
         echo view('front/header', $data);
         echo view('front/navbar');
-        echo view('front/singup');
+        echo view('backend/usuario/singup');
         echo view('front/footer');
     }
 

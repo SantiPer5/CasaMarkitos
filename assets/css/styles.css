@@ -351,7 +351,7 @@ header p {
     left: 0px;
 }
 
-.swiper .card-link button{
+.swiper .card-link button {
     background-color: #e14949;
     color: white;
     border: 0.2px solid red;
@@ -360,14 +360,14 @@ header p {
 
 .swiper .card-link button:hover {
     background-color: rgb(246, 0, 0);
-  }
-  
+}
+
 .swiper .card-link button:active {
     background-color: red;
-  }
+}
 
 
-.swiper .card-price{
+.swiper .card-price {
     margin: 5px;
     padding: 20px;
     padding-right: 0;
@@ -599,89 +599,137 @@ header p {
 
 /* Estilos para el formulario de registro */
 .registro {
-	margin-top: 50px;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+
 }
-.registro h1 {
-	font-size: 36px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 30px;
-	color: #333;
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
-.form-container {
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0,0,0,0.3);
-	padding: 20px;
+
+.button-form {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
 }
-.form-group label {
-	font-size: 18px;
-	color: #333;
+
+.button-guardar {
+    background-color: #007bff;
 }
-.form-control {
-	height: 50px;
-	font-size: 18px;
-	border-radius: 0;
-	border: 2px solid #ccc;
+
+.button-cancelar {
+    background-color: #dc3545;
 }
-.form-control:focus {
-	border-color: #3498db;
-	box-shadow: none;
+
+.registro-pregunta {
+    margin-top: 20px;
+    text-align: center;
 }
-.btn-primary {
-	background-color: #3498db;
-	border-color: #3498db;
-	font-size: 20px;
-	font-weight: bold;
-	border-radius: 0;
-	height: 50px;
+
+.registro-parrafo {
+    text-align: center;
+    margin-top: 20px;
 }
-.btn-primary:hover {
-	background-color: #2c3e50;
-	border-color: #2c3e50;
+
+/* Estilos específicos para el formulario de registro */
+.registro {
+    background-color: #f8f9fa;
+    padding: 50px 0;
 }
+
+.registro-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* .registro-container_form {
+    flex: 0 0 50%;
+} */
+
+.registro-campo {
+    margin-bottom: 20px;
+}
+
+.registro-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* .registro-img {
+    flex: 0 0 50%;
+} */
+
+@media (max-width: 768px) {
+    .registro-container {
+        flex-direction: column;
+    }
+
+    .registro-container_form {
+        flex: 0 0 100%;
+    }
+
+    .registro-img {
+        display: none;
+    }
+}
+
 
 /* fin */
 
 /* login */
 
 .login .card {
-	border: none;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .login .card-header {
-	background-color: #dc3545;
-	color: #fff;
-	border-radius: 10px 10px 0 0;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
 }
 
 .login .card-body {
-	background-color: #fff;
-	border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
 }
 
 .login .form-control {
-	border-radius: 5px;
+    border-radius: 5px;
 }
 
 .login .btn-primary {
-	background-color: #dc3545;
-	border-color: #dc3545;
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .login .btn-primary:hover {
-	background-color: #c82333;
-	border-color: #bd2130;
+    background-color: #c82333;
+    border-color: #bd2130;
 }
 
 .login a {
-	color: #dc3545;
-	text-decoration: none;
+    color: #dc3545;
+    text-decoration: none;
 }
 
 .login a:hover {
-	color: #c82333;
+    color: #c82333;
 }
 
 /*fin login*/

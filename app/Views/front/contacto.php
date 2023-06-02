@@ -1,5 +1,18 @@
 <!-- Contacto -->
 <section class="contact">
+
+<div>
+  <!--recuperamos datos con la función Flashdata para mostrarlos-->
+  <?php if (session()->getFlashdata('success')) {
+    echo "
+      <div class='mt-3 mb-3 ms-3 me-3 h4 text-center alert alert-success alert-dismissible'>
+      <button type='button' class='btn-close' data-bs-dismiss='alert'></button>" . session()->getFlashdata('success') . "
+  </div>";
+  } ?>
+</div>
+<!-- php $validación = \Config\Services::validación(); Esto carga automáticamente el archivo Config\Validation que contiene configuraciones para incluir múltiples conjuntos de reglas -->
+<?php $validation = \Config\Services::validation(); ?>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -10,13 +23,22 @@
         </div>
         <div class="form">
           <h2>Contáctanos</h2>  <!-- Formulario de contacto -->
-          <?php echo form_open('contacto/enviarMensaje'); ?> <!-- Se envía a la función enviarMensaje del controlador ContactoController -->
-            <div class="form-group">
+          <?php if(isset($validation)): ?>
+            <div class="alert-danger">
+              <?php echo $validation->listErrors(); ?>
+            </div>
+          <?php endif; ?>
+
+          
+          <?php echo form_open(base_url('/consulta')); ?> <!-- Se envía a la función enviarMensaje del controlador ContactoController -->
+
+          <div class="form-group">
               <?php echo form_input('nombre', '', 'placeholder="Nombre" required'); ?> <!-- Se crea un input de tipo texto con el nombre "nombre" -->
             </div>
             <div class="form-group">
               <?php echo form_input('correo', '', 'type="email" placeholder="Correo electrónico" required'); ?>
             </div>
+            
             <div class="form-group">
               <?php echo form_input('asunto', '', 'placeholder="Asunto" required'); ?>
             </div>
@@ -26,8 +48,10 @@
             <div class="form-group">
               <?php echo form_submit('enviar', 'Enviar'); ?>
             </div>
-          <?php echo form_close(); ?>
-        </div>
+
+            <?php echo form_close(); ?>
+        
+          </div>
       </div>
       <div class="col-lg-6 map-zone">
         <div class="map">

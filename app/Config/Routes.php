@@ -31,14 +31,19 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->add('/quienessomos', 'Home::quienes_somos');
-$routes->add('/comercializacion', 'Home::comercializacion'); 
-$routes->add('/contacto', 'Home::contacto');
-$routes->add('/terminos', 'Home::terminos');
-$routes->add('/login', 'Home::login');
-$routes->add('/singup', 'Home::singup');
+$routes->get('/quienessomos', 'Home::quienes_somos');
+$routes->get('/comercializacion', 'Home::comercializacion'); 
+$routes->get('/contacto', 'Home::contacto');
+$routes->get('/terminos', 'Home::terminos');
+$routes->get('/login', 'Home::login');
+$routes->get('/singup', 'Home::singup'); 
 
-$routes->post('/enviar-mensaje', 'ContactoController::enviarMensaje');
+/* Consultas */
+$routes->post('/consulta', 'contactoController::registrar_consulta');
+
+/* Rutas de registro de usuario */
+
+$routes->post('/enviar-form', 'authController::register');
 
 //$routes->post('/singup', 'Usuario_controller::singup');
 
