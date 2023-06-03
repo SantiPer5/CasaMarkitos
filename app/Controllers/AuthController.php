@@ -12,6 +12,15 @@ class AuthController extends Controller
         helper(['form', 'url', 'session']); // Se cargan los helpers form y url
     }
     
+    public function singup()
+    {
+        $data['titulo'] = 'Registrarme';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('backend/usuario/singup');
+        echo view('front/footer');
+    }
+
     public function register()
     {
         //Validar el formulario de registro

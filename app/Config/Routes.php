@@ -35,15 +35,20 @@ $routes->get('/quienessomos', 'Home::quienes_somos');
 $routes->get('/comercializacion', 'Home::comercializacion'); 
 $routes->get('/contacto', 'Home::contacto');
 $routes->get('/terminos', 'Home::terminos');
-$routes->get('/login', 'Home::login');
-$routes->get('/singup', 'Home::singup'); 
+
+
 
 /* Consultas */
 $routes->post('/consulta', 'contactoController::registrar_consulta');
 
 /* Rutas de registro de usuario */
-
+$routes->get('/singup', 'authController::singup'); 
 $routes->post('/enviar-form', 'authController::register');
+
+/* Rutas de login */
+$routes->get('/login', 'loginController::login');
+$routes->post('/authLogin', 'loginController::auth');
+$routes->get('/logout', 'loginController::logout');
 
 //$routes->post('/singup', 'Usuario_controller::singup');
 

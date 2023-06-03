@@ -58,14 +58,14 @@ class Home extends BaseController
         echo view('front/footer');
     }
     
-    public function singup()
+    /* public function singup()
     {
         $data['titulo'] = 'Registrarme';
         echo view('front/header', $data);
         echo view('front/navbar');
         echo view('backend/usuario/singup');
         echo view('front/footer');
-    }
+    } */
 
 } 
 
