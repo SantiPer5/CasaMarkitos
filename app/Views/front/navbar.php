@@ -100,7 +100,7 @@
                             href="<?php echo base_url('/')?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#>">Catalogo</a>
+                        <a class="nav-link" href="<?php echo base_url('/catalogo')?>">Catalogo</a>
                     </li>
                     
                     <div class="dropdown dropdown-perso dropdown-perso2 nav-item">

@@ -57,7 +57,8 @@ $routes->post('/guardar', 'productController::guardar'); //Guardar productos
 $routes->get('/borrar/(:num)', 'productController::borrar/$1'); //Borrar productos
 $routes->get('/editar/(:num)', 'productController::editar/$1'); //Formulario de edicion de productos
 $routes->post('/actualizar', 'productController::actualizar'); //Actualizar productos
-
+/* Mostrar productos en el Catalogo */
+$routes->get('/catalogo', 'productController::catalogo');
 
 
 /*

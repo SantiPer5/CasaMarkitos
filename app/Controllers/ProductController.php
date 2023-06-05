@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Product_Model;
+use App\Models\Categoria_Model;
 use CodeIgniter\Controller;
 
 
@@ -151,6 +152,25 @@ public function actualizar($id = null){
     return $this->response->redirect(base_url('/crud_productos'));
 
 }
+
+
+public function catalogo()
+{
+    $categorias = new Categoria_Model();
+    $productos = new Product_Model();
+
+    $categorias = $categorias->findAll();
+    $productos = $productos->findAll();
+    
+
+    $data['titulo'] = 'Editar Producto';
+    echo view('front/header', $data);
+    echo view('front/navbar');
+    echo view('front/catalogo', compact('categorias', 'productos'));
+    echo view('front/footer');
+
+}
+
 
 }
 
