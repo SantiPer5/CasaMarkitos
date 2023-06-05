@@ -69,7 +69,7 @@ class Usuario_controller extends Controller
     
             $userRegister = new Usuarios_Model();
             $userRegister->insert($data);
-            return redirect()->to(base_url('/singup'))->with('success', '¡Usuario registrado con éxito!');
+            return redirect()->to(base_url('/singup')->with('success', '¡Usuario registrado con éxito!');
         } else {
             $data['errors'] = $validation->getErrors();
             

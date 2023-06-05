@@ -49,7 +49,7 @@ class Home extends BaseController
         echo view('front/footer');
     }
     
-    public function login()
+/*    public function login()
     {
         $data['titulo'] = 'Iniciar Sesion';
         echo view('front/header', $data);
@@ -57,7 +57,7 @@ class Home extends BaseController
         echo view('front/login');
         echo view('front/footer');
     }
-    
+     */
     /* public function singup()
     {
         $data['titulo'] = 'Registrarme';

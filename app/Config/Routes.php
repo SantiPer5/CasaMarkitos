@@ -50,7 +50,14 @@ $routes->get('/login', 'loginController::login');
 $routes->post('/authLogin', 'loginController::auth');
 $routes->get('/logout', 'loginController::logout');
 
-//$routes->post('/singup', 'Usuario_controller::singup');
+/* Rutas Productos */
+$routes->get('/crud_productos', 'productController::index'); //Listado de productos
+$routes->get('/agregar_producto', 'productController::agregar_producto'); //Formulario de registro de productos
+$routes->post('/guardar', 'productController::guardar'); //Guardar productos
+$routes->get('/borrar/(:num)', 'productController::borrar/$1'); //Borrar productos
+$routes->get('/editar/(:num)', 'productController::editar/$1'); //Formulario de edicion de productos
+$routes->post('/actualizar', 'productController::actualizar'); //Actualizar productos
+
 
 
 /*
