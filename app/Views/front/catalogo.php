@@ -1,6 +1,21 @@
+<?php 
+        $session = session();
+        $nombre = $session->get('nombre');
+        $perfil = $session->get('perfil_id');
+    ?>
+
+
 <div class="container">
     <h2 class="catalog-title">Catálogo de Productos</h2>
 
+    	<!-- Mostrar mensajes de exito -->
+        <?php if (session()->getFlashdata('success')) {
+        	echo " <div class='h4 text-center alert alert-info alert-dismissible' style='border-radius: 40px;'>
+        	    <button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('success') . "
+            	</div>";
+    	}
+		?>
+        
     <div class="filter-section">
         <label for="categoria-filter">Filtrar por Categoría:</label>
         <select id="categoria-filter" class="form-control">
@@ -27,8 +42,25 @@
                                     <p class="card-text product-price">Precio: $<?php echo $producto['precio']; ?></p>
                                     <p class="card-text product-stock">Stock: <?php echo $producto['stock']; ?></p>
                                     <div class="text-center">
-                                        <a href="#" class="btn btn-primary btn-sm btn-buy">Comprar</a>
-                                        <a href="#" class="btn btn-success btn-sm btn-add-to-cart">Añadir al Carro</a>
+                                        
+                                    
+                                    <!-- Vista para usuario registrado -->
+                                        <?php if ($perfil == 2) : 
+                                            echo form_open('agregar_carrito');
+                                            echo form_hidden('agregar_carrito');
+                                                echo form_hidden('producto_id', $producto['producto_id']);
+                                                echo form_hidden('precio', $producto['precio']);
+                                                echo form_hidden('nombre', $producto['nombre']);
+                                                echo form_submit('Comprar', 'Agregar al Carrito', 'class="btn btn-success btn-sm btn-add-to-cart"');
+                                            echo form_close();
+                                            ?> 
+                                        <!-- Vista para usuario no registrado -->
+                                        <?php else : ?> 
+                                            <a href="<?php echo base_url() ?>/login" class="btn btn-primary btn-sm btn-buy">Comprar</a>
+                                            <a href="<?php echo base_url() ?>/login" class="btn btn-success btn-sm btn-add-to-cart">Añadir al Carro</a>
+                                        
+                                        <?php endif;
+                                        ?>
                                     </div>
                                 </div>
                             </div>

@@ -163,7 +163,7 @@ public function catalogo()
     $productos = $productos->findAll();
     
 
-    $data['titulo'] = 'Editar Producto';
+    $data['titulo'] = 'Catálogo';
     echo view('front/header', $data);
     echo view('front/navbar');
     echo view('front/catalogo', compact('categorias', 'productos'));

@@ -145,7 +145,7 @@
                         <li>
                         <a class="dropdown-item" href="#"><i class="nav-icon fa-solid fa-user"></i>Perfil</a></li>
                         <li>
-                        <a class="dropdown-item" href="<?php echo base_url() ?>"><i class="nav-icon fa-solid fa-cart-arrow-down"></i>Carrito</a>
+                        <a class="dropdown-item" href="<?php echo base_url('/ver_carrito') ?>"><i class="nav-icon fa-solid fa-cart-arrow-down"></i>Carrito</a>
                         </li>
                         <li><a class="dropdown-item" href="#"><i class="nav-icon fa-solid fa-gear"></i>Configuracion</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -174,6 +174,10 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
                             href="<?php echo base_url('/')?>">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="<?php echo base_url('/catalogo')?>">Catalogo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page"
