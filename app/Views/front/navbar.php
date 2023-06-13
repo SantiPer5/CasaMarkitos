@@ -34,7 +34,7 @@
                             href="<?php echo base_url('/')?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Crud Usuarios</a>
+                        <a class="nav-link" href="<?php echo base_url('/ventas')?>">Ventas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('/crud_productos')?>">Crud Productos</a>

@@ -12,65 +12,100 @@ use CodeIgniter\Controller;
 
 class VentasController extends Controller{
 
+    private $cart;
+    private $productos_modelo;
+    private $venta_modelo;
+    private $detalleventa_modelo;
+
     public function __construct(){
         helper(['form', 'url', 'session']);
-
+        $this->cart = \Config\Services::cart();
+        $this->productos_modelo = new Product_Model();
+        $this->venta_modelo = new Ventas_Model();
+        $this->detalleventa_modelo = new DetalleVenta_Model();
 
     }
 
     public function registrar_venta(){
-        $session = session();
-        $cart = \Config\Services::cart();
-        $venta = new Ventas_Model();
-        $detalle = new DetalleVenta_Model();
-        $productoModel = new Product_Model();
-        
-        $cart1 = $cart->contents();
-            foreach ($cart1 as $item) {
-                $producto = $productoModel->where('producto_id', $item['id'])->first();
-                    if($producto['stock'] < $item['qty']){
-                        $session->setFlashdata('error', 'No hay suficiente stock para realizar la venta');
-                        return redirect()->to(base_url().'ver_carrito');
-                    }
-                }
-            
-            
-            $data = array(
-                'id_cliente' => session('id'),
-                'fecha_venta' => date('Y-m-d'),
-                'total_venta' => $cart->total(),
-            );
-            /* Ver que se inserta en el array data */
-            
-            
+        $cartItems = $this->cart->contents();
+        $venta_id = null;
+        $total_venta = 0;
 
-            $id_venta = $venta->insert($data);
-            //cargar detalle de venta
-
-            foreach ($cart1 as $item) {
-                $producto = $producto->where('producto_id', $item['id'])->first();
-                $data = array(
-                    'id_venta' => $id_venta,
-                    'precio' => $item['price'],
-                    'cantidad' => $item['qty'],
-                    'id_producto' => $item['id'],
-                );
-                print_r($data);
-                $detalle->insert($data);
-                $stock = $producto['stock'] - $item['qty'];
-                $producto->update($item['id'], ['stock' => $stock]);
-                
+        foreach ($cartItems as $item) {
+            $producto = $this->productos_modelo->where('producto_id', $item['id'])->first();
+            if ($producto['stock'] < $item['qty']) {
+                return redirect()->route('carrito');
             }
 
-            $cart->destroy();
-            $session->setFlashdata('success', 'Venta realizada correctamente');
-            return redirect()->to(base_url().'catalogo');
-        
+
+            // Guardar venta y obtener el ID solo una vez
+            if (!$venta_id) {
+                $data = [
+                    'id_cliente' => session('id'),
+                'fecha_venta' => date('Y-m-d'),
+                'total_venta' => 0
+                ];
+                $venta_id = $this->venta_modelo->insert($data);
+            }
+
+            $detalle_venta = [
+                'id_venta'         => $venta_id,
+                'id_producto'      => $item['id'],
+                'cantidad' => $item['qty'],
+                'precio'   => $item['price'],
+            ];
+
+            $nuevoStock = $producto['stock'] - $item['qty'];
+            $this->productos_modelo->update($item['id'], ['stock' => $nuevoStock]);
+
+            $this->detalleventa_modelo->insert($detalle_venta);
+
+            $total_venta += $item['subtotal'];
+        }
+        $this->venta_modelo->update($venta_id, ['total_venta' => $total_venta]);
+
+        $this->cart->destroy();
+        //mensaje de exito
+        session()->setFlashdata('success', 'Compra realizada con éxito!!');
+        return redirect()->route('catalogo');
+
     }
+        
+    public function factura($venta_id){
 
-
-
-
+        $detalle_ventas = new DetalleVenta_Model();
+        $data['ventaDetalle']=$detalle_ventas->getDetalles($venta_id);
+            echo view('front/header');
+            echo view('front/navbar');
+            echo view('backend/factura', $data);
+            echo view('front/footer');
+        }
+    
+    
+        public function ventas(){
+            $session = session();
+            $id=$session->get('id');
+            $perfil=$session->get('perfil_id');
+            if($perfil == '1'){
+                $detalle_ventas = new Ventas_Model();
+                
+                $data['ventaDetalle'] = $detalle_ventas ->orderBy('id','DESC')->findall();
+                    
+                    $data['titulo'] = 'Ventas';
+                    echo view('front/header', $data);
+                    echo view('front/navbar');
+                    echo view('backend/ventas/listar_ventas', $data);
+                    echo view('front/footer');
+                } else if ($perfil == '2') {
+                    $detalle_ventas = new Ventas_Model();
+                    $data['ventaDetalle'] = $detalle_ventas->where('usuario_id', $id)->orderBy('id', 'DESC')->findAll();
+                    $data['titulo'] = 'Ventas';
+                    echo view('front/header', $data);
+                    echo view('front/navbar');
+                    echo view('backend/ventas/listar_ventas', $data);
+                    echo view('front/footer');
+                }
+            } 
 
 
 

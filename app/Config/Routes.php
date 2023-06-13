@@ -67,8 +67,10 @@ $routes->get('carrito_elimina/(:any)','cartController::remove/$1');
 $routes->get('/borrar','cartController::borrar_carrito');
 //muestra las compras una vez que realizamos la misma
 $routes->get('/carrito-comprar', 'ventasController::registrar_venta');
-$routes->get('/sumar', 'cartController::sumar_carrito');
-$routes->get('/restar', 'cartController::restar_carrito');
+
+
+//Rutas ventas
+$routes->get('/ventas', 'ventasController::ventas');
 
 
 
