@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title> <?php echo ($titulo);?></title>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/wsp_btn.css')?>">
+   
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,5 +25,5 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-
+    
 </head>

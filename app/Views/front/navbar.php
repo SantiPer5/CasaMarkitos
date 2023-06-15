@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand" href="<?php echo base_url('/')?>"><img
-                src="assets\img\f9a6a9437f850c9aace8c28fc0df31a1.png" alt="Logo" width="220"></a>
+                src="<?php echo base_url('/assets/img/f9a6a9437f850c9aace8c28fc0df31a1.png')?>" alt="Logo" width="220"></a>
         <!-- Navbar Toggler -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('/crud_productos')?>">Crud Productos</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#>">Consultas</a>
-                    </li>
                     
                     <div class="dropdown dropdown-perso dropdown-perso2 nav-item">
                         <button class="btn dropdown-toggle btn-perso" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</button>
@@ -66,7 +63,7 @@
                 <form class="d-flex align-items-center">
                     <div class="dropdown text-end">
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets\img\perfil-de-usuario.webp" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <img src="<?php echo base_url('assets/img/user-icon.png')?>" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     
                     <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end text-small" aria-labelledby="dropdownUser1" style="top: 150%;">
@@ -135,7 +132,7 @@
 
                     <div class="dropdown text-end">
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets\img\perfil-de-usuario.webp" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <img src="<?php echo base_url('assets/img/user-icon.png')?>" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     
                     <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end text-small" aria-labelledby="dropdownUser1" style="top: 150%;">
@@ -147,7 +144,7 @@
                         <li>
                         <a class="dropdown-item" href="<?php echo base_url('/ver_carrito') ?>"><i class="nav-icon fa-solid fa-cart-arrow-down"></i>Carrito</a>
                         </li>
-                        <li><a class="dropdown-item" href="#"><i class="nav-icon fa-solid fa-gear"></i>Configuracion</a></li>
+                        <li><a class="dropdown-item" href="<?php echo base_url('/ventas') ?>"><i class="nav-icon fa-solid fa-gear"></i>Mis Compras</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
                         <a class="dropdown-item" href="<?php echo base_url('logout'); ?>" tabindex="-1" aria-disabled="true"><i class="nav-icon fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a>
@@ -158,6 +155,7 @@
                 </form>
             </div>
         </div>
+        
 
 
             <?php } else { ?>
@@ -206,6 +204,7 @@
 
             </div>
         </div>
+        
 
         <?php } ?>
 

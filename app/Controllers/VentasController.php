@@ -74,10 +74,12 @@ class VentasController extends Controller{
     public function factura($venta_id){
 
         $detalle_ventas = new DetalleVenta_Model();
-        $data['ventaDetalle']=$detalle_ventas->getDetalles($venta_id);
-            echo view('front/header');
+        $data['ventaDetalle'] = $detalle_ventas->getDetalles($venta_id);
+
+        $data['titulo'] = 'Factura';
+            echo view('front/header', $data);
             echo view('front/navbar');
-            echo view('backend/factura', $data);
+            echo view('backend/ventas/factura', $data);
             echo view('front/footer');
         }
     
@@ -86,25 +88,22 @@ class VentasController extends Controller{
             $session = session();
             $id=$session->get('id');
             $perfil=$session->get('perfil_id');
-            if($perfil == '1'){
-                $detalle_ventas = new Ventas_Model();
-                
-                $data['ventaDetalle'] = $detalle_ventas ->orderBy('id','DESC')->findall();
-                    
-                    $data['titulo'] = 'Ventas';
-                    echo view('front/header', $data);
-                    echo view('front/navbar');
-                    echo view('backend/ventas/listar_ventas', $data);
-                    echo view('front/footer');
-                } else if ($perfil == '2') {
-                    $detalle_ventas = new Ventas_Model();
-                    $data['ventaDetalle'] = $detalle_ventas->where('usuario_id', $id)->orderBy('id', 'DESC')->findAll();
-                    $data['titulo'] = 'Ventas';
-                    echo view('front/header', $data);
-                    echo view('front/navbar');
-                    echo view('backend/ventas/listar_ventas', $data);
-                    echo view('front/footer');
-                }
+
+            $ventasModel = new Ventas_Model();
+
+
+            if ($perfil == '1') { // Si es administrador
+                $data['ventaDetalle'] = $ventasModel->getDetalles(); // Obtener todas las ventas
+            } else if ($perfil == '2') { // Si es cliente
+                //Obtener las compras del cliente
+                $data['ventaDetalle'] = $ventasModel->where('id_cliente', $id)->orderBy('id', 'DESC')->findAll();
+            }
+
+                $data['titulo'] = 'Ventas';
+                echo view('front/header', $data);
+                echo view('front/navbar');
+                echo view('backend/ventas/listar_ventas', $data);
+                echo view('front/footer');
             } 
 
 

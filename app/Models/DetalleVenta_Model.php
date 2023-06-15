@@ -1,13 +1,30 @@
 <?php
-
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class DetalleVenta_Model extends Model
 {
-    protected $table = 'detalle_venta'; // Nombre de la tabla en la base de datos
-    protected $primaryKey = 'id'; // Nombre de la clave primaria
-    protected $allowedFields = ['id_venta', 'precio', 'cantidad', 'id_producto']; // Campos permitidos para inserción
+    protected $table = 'detalle_venta';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['id_venta', 'id_producto', 'cantidad', 'precio'];
+
+    public function getDetalles($id = null, $id_usuario = null) {
+        $db = \Config\Database::connect();
+        $builder = $db->table('detalle_venta'); // Crear una instancia de QueryBuilder
     
-    // Otras configuraciones y métodos según tus necesidades
+        $builder->select('*');
+        $builder->join('venta', 'venta.id = detalle_venta.id_venta');
+        $builder->join('producto', 'producto.producto_id = detalle_venta.id_producto');
+        $builder->join('users', 'users.id_persona = venta.id_cliente');
+    
+        if ($id !== null) {
+            $builder->where('venta.id', $id);
+        }
+    
+        $query = $builder->get();
+        return $query->getResultArray();
+    }
 }
+
+

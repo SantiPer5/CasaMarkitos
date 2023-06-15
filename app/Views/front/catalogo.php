@@ -7,6 +7,12 @@
 
 <div class="container">
     <h2 class="catalog-title">Catálogo de Productos</h2>
+        
+    <!-- Boton de wsp flotante-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.link/scmdh4" class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+        </a>
 
     	<!-- Mostrar mensajes de exito -->
         <?php if (session()->getFlashdata('success')) {
@@ -37,7 +43,7 @@
                             <div class="card product-card">
                                 <img src="<?php echo base_url() ?>/assets/uploads/<?php echo $producto['imagen']; ?>" class="card-img-top product-image" alt="Imagen del producto">
                                 <div class="card-body">
-                                    <h5 class="card-title product-name"><?php echo $producto['nombre']; ?></h5>
+                                    <h5 class="card-title product-name"><?php echo $producto['nombre_prod']; ?></h5>
                                     <p class="card-text product-description"><?php echo $producto['descripcion']; ?></p>
                                     <p class="card-text product-price">Precio: $<?php echo $producto['precio']; ?></p>
                                     <p class="card-text product-stock">Stock: <?php echo $producto['stock']; ?></p>
@@ -50,7 +56,7 @@
                                             echo form_hidden('agregar_carrito');
                                                 echo form_hidden('producto_id', $producto['producto_id']);
                                                 echo form_hidden('precio', $producto['precio']);
-                                                echo form_hidden('nombre', $producto['nombre']);
+                                                echo form_hidden('nombre', $producto['nombre_prod']);
                                                 echo form_submit('Comprar', 'Agregar al Carrito', 'class="btn btn-success btn-sm btn-add-to-cart"');
                                             echo form_close();
                                             ?> 

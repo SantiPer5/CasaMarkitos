@@ -32,7 +32,7 @@
                     <?php foreach ($productos as $prod): ?>
                             <tr class="table-row">
                                 <td><?php echo $prod['producto_id']; ?></td>
-                                <td><?php echo $prod['nombre']; ?></td>
+                                <td><?php echo $prod['nombre_prod']; ?></td>
                                 <td>
                                     <?php
                                     $categoria = '';

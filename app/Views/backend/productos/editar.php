@@ -24,7 +24,7 @@
 
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input id="nombre" class="form-control" type="text" name="nombre" value="<?php echo $producto['nombre'] ?>" required>
+                    <input id="nombre_prod" class="form-control" type="text" name="nombre_prod" value="<?php echo $producto['nombre_prod'] ?>" required>
                 </div>
 
                 <div class="form-group">

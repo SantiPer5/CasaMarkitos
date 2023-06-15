@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="media">
-          <img src="assets\img\comerce\tipos-entregas.avif" class="img-fluid" alt="Imagen 1">
+          <img src="<?php echo base_url('assets/img/comerce/tipos-entrega.png') ?>" class="img-fluid" alt="Imagen 1">
           <div class="media-body">
             <h3>Tipos de entregas</h3>
             <ul>
@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-4">
         <div class="media">
-          <img src="assets\img\comerce\formas-envio.avif" class="img-fluid" alt="Imagen 2">
+          <img src="<?php echo base_url('assets/img/comerce/formas-envio.png') ?>" class="img-fluid" alt="Imagen 2">
           <div class="media-body">
             <h3>Formas de envío</h3>
             <ul>
@@ -31,7 +31,7 @@
       </div>
       <div class="col-md-4">
         <div class="media">
-          <img src="assets\img\comerce\formas-pago.avif" class="img-fluid" alt="Imagen 3">
+          <img src="<?php echo base_url('assets/img/comerce/formas-pago.png') ?>" class="img-fluid" alt="Imagen 3">
           <div class="media-body">
             <h3>Formas de pago</h3>
             <ul>

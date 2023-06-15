@@ -71,6 +71,7 @@ $routes->get('/carrito-comprar', 'ventasController::registrar_venta');
 
 //Rutas ventas
 $routes->get('/ventas', 'ventasController::ventas');
+$routes->get('/factura/(:num)', 'ventasController::factura/$1');
 
 
 

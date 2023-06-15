@@ -24,7 +24,7 @@
             
                 <div class="form-group">
                     <label for="nombre">Nombre del producto</label>
-                    <input id="nombre" class="form-control" type="text" name="nombre" required>
+                    <input id="nombre_prod" class="form-control" type="text" name="nombre_prod" required>
                 </div>
                 
                 <div class="form-group">

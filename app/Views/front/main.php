@@ -1,4 +1,5 @@
 <main>
+    
     <!-- Carrousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -20,7 +21,15 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
         </a> -->
-    </div>
+        </div>
+    </div> 
+    
+    <!-- Boton de wsp flotante-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.link/scmdh4" class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
 
     <!-- Contenido principal -->
     <div class="principal">
@@ -63,7 +72,7 @@
                             <p>Pack por 30u</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$100</span>
                         </div>
                     </div>
@@ -79,7 +88,7 @@
                             <p>Precio por caja</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$150</span>
                         </div>
                     </div>
@@ -95,7 +104,7 @@
                             <p>Percio por 10u.</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$150</span>
                         </div>
                     </div>
@@ -111,7 +120,7 @@
                             <p>Precio por 10u.</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$3000</span>
                         </div>
                     </div>
@@ -127,7 +136,7 @@
                             <p>Precio por 5 u.</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$2000</span>
                         </div>
                     </div>
@@ -143,7 +152,7 @@
                             <p>Precio por u.</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$440</span>
                         </div>
                     </div>
@@ -159,7 +168,7 @@
                             <p>precio por pack.</p>
                         </div>
                         <div class="card-link">
-                            <button class="btn btn-success">Agregar</button>
+                            <button class="btn btn-success">Ver Productos</button>
                             <span class="card-price">$4000</span>
                         </div>
                     </div>

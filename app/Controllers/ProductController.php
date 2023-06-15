@@ -40,7 +40,7 @@ public function agregar_producto(){
 
 public function guardar(){
     $input = $this->validate([
-        'nombre' => 'required|min_length[3]|max_length[255]',
+        'nombre_prod' => 'required|min_length[3]|max_length[255]',
         'precio' => 'required',
         'imagen' => 'mime_in[imagen,image/jpg,image/jpeg,image/gif,image/png,image/webp,image/ico,image/jfif]|max_size[imagen,4096]',
     ]);
@@ -66,7 +66,7 @@ public function guardar(){
         $imagen->move('./assets/uploads', $nombreAleatorio);
 
         $dato = [
-            'nombre' => $this->request->getVar('nombre'),
+            'nombre_prod' => $this->request->getVar('nombre_prod'),
             'categoria_id' => $this->request->getVar('categoria_id'),
             'precio' => $this->request->getVar('precio'),
             'descripcion' => $this->request->getVar('descripcion'),
@@ -115,7 +115,7 @@ public function actualizar($id = null){
     
     $productModel = new Product_Model();
     $datos = [
-        'nombre' => $this->request->getVar('nombre'),
+        'nombre_prod' => $this->request->getVar('nombre_prod'),
         'categoria_id' => $this->request->getVar('categoria_id'),
         'precio' => $this->request->getVar('precio'),
         'descripcion' => $this->request->getVar('descripcion'),

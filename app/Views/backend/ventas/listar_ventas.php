@@ -1,29 +1,46 @@
-<h1><?php echo $titulo; ?></h1>
+<section class="container container-table-productos mt-3 mb-3">
+    <?php $session = session();
+            $nombre = $session->get('nombre');
+            $perfil = $session->get('perfil_id');
+        ?>
 
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>ID Cliente</th>
-                <th>Fecha compra</th>
-                <th>Total de la venta</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <!-- Agrega aquí las columnas adicionales que deseas mostrar -->
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($ventaDetalle as $venta) : ?>
+
+    <h1><?php echo $titulo; ?></h1>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td><?php echo isset($venta['id_cliente']) ? $venta['id_cliente'] : ''; ?></td>
-                    <!-- Traigo el nombre del id cliente -->
-                    <td><?php echo isset($venta->id_cliente->nombre) ? $venta->id_cliente->nombre : ''; ?></td>
-                    <td><?php echo isset($venta['fecha_venta']) ? $venta['fecha_venta'] : ''; ?></td>
-                    <td><?php echo isset($venta['total_venta']) ? $venta['total_venta'] : ''; ?></td>
-                    <td><?php echo isset($venta['precio']) ? $venta['precio'] : ''; ?></td>
-                    <!-- Agrega aquí las celdas adicionales que deseas mostrar -->
+                    <th>ID Venta</th>
+                    <?php if ($perfil == '1') : ?>
+                        <th>Nombre Cliente</th>
+                        <th>Fecha de Venta</th>
+                        <th>Total de Venta</th>
+
+                    <?php else : ?>
+                        <th>Fecha de Compra</th>
+                        <th>Total de Compra</th>
+                    <?php endif; ?>
+                    <th>Accion</th>
+
+                    <!-- Agrega aquí las columnas adicionales que deseas mostrar -->
                 </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-</div>
+            </thead>
+            <tbody>
+                <?php foreach ($ventaDetalle as $venta) : ?> 
+                    <tr>
+                        <td><?php echo isset($venta['id']) ? $venta['id'] : ''; ?></td> 
+                        <?php if ($perfil == '1') : ?>
+                            <td><?php echo isset($venta['nombre']) ? $venta['nombre'] : ''; ?>  <?php echo isset($venta['apellido']) ? $venta['apellido'] : ''; ?></td>
+                        <?php endif; ?>
+                        <td><?php echo isset($venta['fecha_venta']) ? $venta['fecha_venta'] : ''; ?></td>
+                        <td><?php echo isset($venta['total_venta']) ? $venta['total_venta'] : ''; ?></td>
+                        <td>
+                                        <a <?php if ($perfil == '1') echo 'class="btn btn-dark btn-opciones"'; ?> href="<?= base_url('factura/' . $venta['id']) ?>" class="btn btn-primary btn-opciones">Ver Factura</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+</section>

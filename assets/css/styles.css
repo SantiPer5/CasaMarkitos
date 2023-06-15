@@ -116,6 +116,31 @@ body {
     color: #2B2B2B;
 }
 
+.btn-wsp {
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+    background-color: #128c7e;
+    color: #fff;
+    border-color: #128c7e;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* Estilos del Header */
@@ -737,6 +762,7 @@ input[type="tel"] {
 
 /* Estilos del Footer */
 .footer {
+    margin-bottom: 0;
     background-color: #bdc5c9;
 }
 
@@ -754,6 +780,7 @@ input[type="tel"] {
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
+
 }
 
 .footer p {
@@ -850,7 +877,7 @@ input[type="tel"] {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-}	
+}
 
 .category-section {
     margin-bottom: 20px;
@@ -949,4 +976,97 @@ input[type="tel"] {
 #quienes-somos .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+/* Facturacion */
+.container-table-productos-factura {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.container-table-productos-factura h2 {
+    color: #c62828;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.container-table-productos-factura .card {
+    border: none;
+    box-shadow: none;
+}
+
+.container-table-productos-factura .card-title {
+    color: #c62828;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-table-productos-factura .card-text {
+    margin-bottom: 0;
+}
+
+.container-table-productos-factura table {
+    margin-bottom: 20px;
+}
+
+.container-table-productos-factura table th,
+.container-table-productos-factura table td {
+    padding: 10px;
+}
+
+.container-table-productos-factura table th {
+    background-color: #c62828;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-table-productos-factura table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.container-table-productos-factura .card-title,
+.container-table-productos-factura .card-text {
+    color: #000;
+}
+
+.container-table-productos-factura .card-text strong {
+    font-weight: bold;
+}
+
+.container-table-productos-factura .row.justify-content-end {
+    margin-top: 30px;
+}
+
+.container-table-productos-factura .card.mb-4 {
+    border: none;
+    box-shadow: none;
+}
+
+.container-table-productos-factura .card-body {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: right;
+}
+
+.container-table-productos-factura .card-body h5.card-title {
+    margin-bottom: 10px;
+}
+
+.container-table-productos-factura .card-body h4.card-text {
+    color: #c62828;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container-table-productos-factura .img-fluid {
+    width: 10rem;
+    height: auto;
+    object-fit: cover;
 }
