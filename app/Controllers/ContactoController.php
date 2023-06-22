@@ -70,7 +70,8 @@ class ContactoController extends BaseController {
                     'nombre' => $request->getPost('nombre'),
                     'correo' => $request->getPost('correo'),
                     'asunto' => $request->getPost('asunto'),
-                    'mensaje' => $request->getPost('mensaje')
+                    'mensaje' => $request->getPost('mensaje'),
+                    'leido' => 'NO'
                 ];
 
                 $userConsulta = new Consulta_Model();
