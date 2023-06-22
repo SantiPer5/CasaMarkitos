@@ -41,7 +41,8 @@ public function agregar_producto(){
 public function guardar(){
     $input = $this->validate([
         'nombre_prod' => 'required|min_length[3]|max_length[255]',
-        'precio' => 'required',
+        'precio' => 'required|numeric',
+        'stock' => 'required|numeric',
         'imagen' => 'mime_in[imagen,image/jpg,image/jpeg,image/gif,image/png,image/webp,image/ico,image/jfif]|max_size[imagen,4096]',
     ]);
 
@@ -57,8 +58,9 @@ public function guardar(){
 
         if(!$this->request->getFile('imagen')->isValid()) {
             //el usuario no ha seleccionado un archivo de imagen valido
-            session()->setFlashdata('msg', 'Error al cargar la imagen');
-            return redirect()->to(base_url('/agregar_producto'));
+            session()->setFlashdata('err', 'Error al cargar la imagen'); 
+            return redirect()->to(base_url('/agregar_producto'))->withInput();
+
         }
 
         $imagen = $this->request->getFile('imagen');
@@ -111,47 +113,64 @@ public function editar($id = null){
 
 }
 
-public function actualizar($id = null){
-    
+public function actualizar($id = null)
+{
     $productModel = new Product_Model();
-    $datos = [
-        'nombre_prod' => $this->request->getVar('nombre_prod'),
-        'categoria_id' => $this->request->getVar('categoria_id'),
-        'precio' => $this->request->getVar('precio'),
-        'descripcion' => $this->request->getVar('descripcion'),
-        'stock' => $this->request->getVar('stock'),
-        'estado' => $this->request->getVar('estado')
-    ];
+
+    // Validación de campos
+    $validation = $this->validate([
+        'nombre_prod' => 'required|min_length[3]|max_length[255]',
+        'precio' => 'required|numeric',
+        'descripcion' => 'max_length[255]',
+        'stock' => 'required|numeric',
+    ]);
 
     $id = $this->request->getVar('producto_id');
+    $data['producto'] = $productModel->where('producto_id', $id)->first();
 
+    if (!$validation) {
+        // Mostrar errores de validación
+        $data['titulo'] = 'Editar Producto';
+        $data['validation'] = $this->validator; // Pasar los errores de validación a la vista
 
-    $productModel->update($id, $datos);
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('backend/productos/editar', $data);
+        echo view('front/footer');
+    } else {
+        $datos = [
+            'nombre_prod' => $this->request->getVar('nombre_prod'),
+            'categoria_id' => $this->request->getVar('categoria_id'),
+            'precio' => $this->request->getVar('precio'),
+            'descripcion' => $this->request->getVar('descripcion'),
+            'stock' => $this->request->getVar('stock'),
+            'estado' => $this->request->getVar('estado')
+        ];
 
-    $validation =  $this->validate([
-        'imagen' => 'uploaded[imagen]|mime_in[imagen,image/jpg,image/jpeg,image/gif,image/png,image/webp,image/ico,image/jfif]|max_size[imagen,4096]',
-    ]);
-    
-    if($validation){ //Si la imagen es valida, la actualizamos
+        $productModel->update($id, $datos);
 
-        if($imagen = $this->request->getFile('imagen')){ //Si el usuario ha seleccionado una imagen
-            $datosProducto = $productModel->where('producto_id', $id)->first(); //Obtenemos los datos del producto 
+        $imagen = $this->request->getFile('imagen');
 
-            $rutaImagen = './assets/uploads/'.$datosProducto['imagen']; //Obtenemos la ruta de la imagen
-            unlink($rutaImagen); //Eliminamos la imagen
+        if ($imagen->isValid() && !$imagen->hasMoved()) {
+            // Verificar si se ha seleccionado una imagen válida
+            $datosProducto = $productModel->where('producto_id', $id)->first();
 
-            $nuevoNombre = $imagen->getRandomName(); //Generamos un nombre aleatorio para la imagen
-            $imagen->move('./assets/uploads', $nuevoNombre); //Movemos la imagen a la carpeta uploads
+            $rutaImagen = './assets/uploads/' . $datosProducto['imagen'];
+            unlink($rutaImagen);
 
-            $datos = [ 'imagen' => $nuevoNombre ]; //Actualizamos el campo imagen con el nuevo nombre
-            $productModel->update($id, $datos); //Actualizamos el registro en la base de datos
+            $nuevoNombre = $imagen->getRandomName();
+            $imagen->move('./assets/uploads', $nuevoNombre);
+
+            $datos['imagen'] = $nuevoNombre;
+            $productModel->update($id, $datos);
         }
-    } 
 
-    session()->setFlashdata('msg', 'Producto actualizado correctamente');
-    return $this->response->redirect(base_url('/crud_productos'));
-
+        session()->setFlashdata('msg', 'Producto actualizado correctamente');
+        return $this->response->redirect(base_url('/crud_productos'));
+    }
 }
+
+
 
 
 public function catalogo()

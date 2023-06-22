@@ -34,10 +34,13 @@
                             href="<?php echo base_url('/')?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('/ventas')?>">Ventas</a>
+                        <a class="nav-link" href="<?php echo base_url('/ventas')?>">Mis Ventas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('/crud_productos')?>">Crud Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url('/consulta_contactos')?>">Consultas</a>
                     </li>
                     
                     <div class="dropdown dropdown-perso dropdown-perso2 nav-item">

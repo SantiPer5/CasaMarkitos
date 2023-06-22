@@ -39,23 +39,23 @@
 
             <div class="registro-campo">
                 <label for="name">Nombre/es</label>
-                <input type="text" name="nombre" id="name" placeholder="Aa"> 
+                <input type="text" name="nombre" id="name" placeholder="Aa" value="<?= set_value('nombre') ?>"> 
 
             </div>
 
             <div class="registro-campo">
                 <label for="surname" style="font-size: 12.8px;">Apellido</label>
-                <input type="text" name="apellido" id="surname" placeholder="Aa">
+                <input type="text" name="apellido" id="surname" placeholder="Aa" value="<?= set_value('apellido') ?>">
             </div>
 
             <div class="registro-campo">
                 <label for="mail">Email</label>
-                <input type="email" name="email" id="mail" placeholder="example@gmail.com">
+                <input type="email" name="email" id="mail" placeholder="example@gmail.com" value="<?= set_value('email') ?>">
             </div>
             
             <div class="registro-campo">
-              <label for="phone">Número de celular</label>
-              <input type="tel" name="telefono" id="phone" placeholder="Num de celular sin 0 ni 15">
+                <label for="phone">Número de celular</label>
+                <input type="tel" name="telefono" id="phone" placeholder="Num de celular sin 0 ni 15" value="<?= set_value('telefono') ?>">
             </div>
 
             <div class="registro-campo">
@@ -75,12 +75,8 @@
 
             <p class="registro-pregunta">Ya tienes una cuenta? <a href="<?php echo base_url('login')?>"><b>Inicia sesión.</b></a></p>
         </form>
-<!-- 
-        <figure class="registro-container_img">
-            <img src="assets\img\registro\registro_2.png" alt="form-img">
-        </figure> -->
 
     </div>
 
-    <p class="registro-parrafo">Al registrarte estás aceptando nuestros <a href="<?php echo base_url('terminosyusos') ?>" target="_blank"><b>Términos de Usos.</b></a></p>
+    <p class="registro-parrafo">Al registrarte estás aceptando nuestros <a href="<?php echo base_url('terminos') ?>"><b>Términos de Usos.</b></a></p>
 </section>

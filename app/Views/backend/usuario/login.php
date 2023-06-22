@@ -36,11 +36,9 @@
 							</div>
 							<button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
 						</form>
+						
 						<div class="text-center mt-3">
-							<a href="#">¿Olvidó su contraseña?</a>
-						</div>
-						<div class="text-center mt-3">
-							<a href="#">¿No tiene una cuenta? Regístrese aquí</a>
+							<a href="<?php echo base_url('singup') ?>">¿No tiene una cuenta? Regístrese aquí</a>
 						</div>
 					</div>
 				</div>

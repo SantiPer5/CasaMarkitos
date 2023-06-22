@@ -3,24 +3,26 @@
     <div class="card mt-4">
         <div class="card-header">
             <h1>Editar Producto</h1>
-            <?php if (session()->getFlashdata('msg')): ?>
-                <div class="alert alert-success mt-4">
-                    <?= session()->getFlashdata('msg') ?>
-                </div>
-            <?php endif; ?>
+            <?php if (isset($validation)): ?>
+    <!-- Mostrar errores de validación -->
+    <?php foreach ($validation->getErrors() as $error): ?>
+        <p><?php echo $error ?></p>
+    <?php endforeach; ?>
+<?php endif; ?>
         </div>
         <div class="card-body">
             <form method="post" action="<?php echo base_url('/actualizar') ?>" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="categoria_id">Categoria</label>
-                    <select name="categoria_id" id="categoria_id" class="select-styling">
-                        <option value="1">Articulos de Kiosco</option>
-                        <option value="2">Bazar</option>
-                        <option value="3">Electrodomesticos</option>
-                        <option value="4">Libreria</option>
-                        <option value="5">Varios</option>
-                    </select>
-                </div>
+            <div class="form-group">
+                <label for="categoria_id">Categoria</label>
+                <select name="categoria_id" id="categoria_id" class="form-control">
+                    <option value="1" <?php echo ($producto['categoria_id'] == 1) ? 'selected' : ''; ?>>Articulos de Kiosco</option>
+                    <option value="2" <?php echo ($producto['categoria_id'] == 2) ? 'selected' : ''; ?>>Bazar</option>
+                    <option value="3" <?php echo ($producto['categoria_id'] == 3) ? 'selected' : ''; ?>>Electrodomesticos</option>
+                    <option value="4" <?php echo ($producto['categoria_id'] == 4) ? 'selected' : ''; ?>>Libreria</option>
+                    <option value="5" <?php echo ($producto['categoria_id'] == 5) ? 'selected' : ''; ?>>Varios</option>
+                    <option value="0" <?php echo ($producto['categoria_id'] == 0) ? 'selected' : ''; ?>>OFERTAS</option>
+                </select>
+            </div>
 
                 <div class="form-group">
                     <label for="nombre">Nombre</label>

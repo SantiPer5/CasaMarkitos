@@ -40,6 +40,10 @@ $routes->get('/terminos', 'Home::terminos');
 
 /* Consultas */
 $routes->post('/consulta', 'contactoController::registrar_consulta');
+$routes->get('/consulta_contactos', 'contactoController::principal');
+$routes->get('/consulta_no_leidos', 'contactoController::noLeidos');
+$routes->get('/borrarconsulta/(:num)', 'contactoController::borrarConsulta/$1');
+$routes->get('/consulta_leido/(:num)', 'contactoController::leido/$1');
 
 /* Rutas de registro de usuario */
 $routes->get('/singup', 'authController::singup'); 
@@ -57,16 +61,18 @@ $routes->post('/guardar', 'productController::guardar'); //Guardar productos
 $routes->get('/borrar/(:num)', 'productController::borrar/$1'); //Borrar productos
 $routes->get('/editar/(:num)', 'productController::editar/$1'); //Formulario de edicion de productos
 $routes->post('/actualizar', 'productController::actualizar'); //Actualizar productos
+
 /* Mostrar productos en el Catalogo */
 $routes->get('/catalogo', 'cartController::catalogo');
+
+
 /* Carrito */
 $routes->get('/ver_carrito', 'cartController::ver_carrito');
 $routes->post('/agregar_carrito', 'cartController::add');
-$routes->get('carrito_elimina/(:any)','cartController::remove/$1');
-//eliminar todo el carrito
-$routes->get('/borrar','cartController::borrar_carrito');
+$routes->get('carrito_elimina/(:any)','cartController::remove/$1'); // Elimina un ptoducto con id
+$routes->get('/borrar','cartController::borrar_carrito'); //Elimina toda el carrito
 //muestra las compras una vez que realizamos la misma
-$routes->get('/carrito-comprar', 'ventasController::registrar_venta');
+$routes->get('/carrito-comprar', 'ventasController::registrar_venta'); //Compra/Registra el carrito
 
 
 //Rutas ventas

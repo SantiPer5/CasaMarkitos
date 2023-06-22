@@ -1,4 +1,23 @@
 <div class="container container-table-productos mt-3 mb-3" id="carrito">
+
+    <div style="position: absolute; top: 10%; z-index: 1; left: 50%; transform: translateX(-50%);">
+        <!--recuperamos datos con la función Flashdata para mostrarlos-->
+        <?php if (session()->getFlashdata('succescompra')) {
+            echo " <div class='h4 text-center alert alert-info alert-dismissible' style='border-radius: 40px;'>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('succescompra') . "
+                </div>";
+        }
+        ?>
+        <?php if (session()->getFlashdata('mensaje_stock')) {
+            echo " <div class='h4 text-center alert alert-info alert-dismissible' style='border-radius: 40px;'>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('mensaje_stock') . "
+                </div>";
+        }
+        ?>
+
+    </div>
+
+
     <div class="carts" >
         <div class = "heading">
             <h2 style="margin-bottom: 60px; border-color: #023e8a;">Productos en tu Carrito</h2>
@@ -39,12 +58,12 @@
                 </tr>
 
             <?php // Crea un formulario y manda los valores a carrito_controller/actualiza carrito
-            echo form_open('carrito_actualiza');//ruta
+            echo form_open('carrito_actualiza');
                 $gran_total = 0;
-                $i = 1; //
-               // foreach ($this->cart->contents() as $items): 
+                $i = 1; 
+
                 foreach ($cart as $item):
-                  //  echo "<table class='table table-striped'>";
+
                     echo  form_hidden('cart[' . $item['id'] . '][id]', $item['id']); 
                     echo  form_hidden('cart[' . $item['id'] . '][rowid]', $item['rowid']); 
                     echo  form_hidden('cart[' . $item['id'] . '][name]', $item['name']);

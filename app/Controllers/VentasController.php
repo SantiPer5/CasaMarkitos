@@ -12,65 +12,76 @@ use CodeIgniter\Controller;
 
 class VentasController extends Controller{
 
-    private $cart;
-    private $productos_modelo;
-    private $venta_modelo;
-    private $detalleventa_modelo;
-
     public function __construct(){
         helper(['form', 'url', 'session']);
-        $this->cart = \Config\Services::cart();
-        $this->productos_modelo = new Product_Model();
-        $this->venta_modelo = new Ventas_Model();
-        $this->detalleventa_modelo = new DetalleVenta_Model();
-
     }
 
     public function registrar_venta(){
-        $cartItems = $this->cart->contents();
-        $venta_id = null;
-        $total_venta = 0;
+    
+    $idSession = session();
+    $cart = \Config\Services::cart();
+    $productos = $cart->contents();
+    $montoTotal = 0;
 
-        foreach ($cartItems as $item) {
-            $producto = $this->productos_modelo->where('producto_id', $item['id'])->first();
-            if ($producto['stock'] < $item['qty']) {
-                return redirect()->route('carrito');
-            }
+    $productModel = new Product_Model();
+    $exceededStock = false;
+    $nombreProducto = '';
 
+    foreach ($productos as $producto) {
+        $productStock = $productModel->find($producto["id"]); // Obtener los detalles del producto
+        $stock = $productStock["stock"]; // Obtener el stock del producto
 
-            // Guardar venta y obtener el ID solo una vez
-            if (!$venta_id) {
-                $data = [
-                    'id_cliente' => session('id'),
-                'fecha_venta' => date('Y-m-d'),
-                'total_venta' => 0
-                ];
-                $venta_id = $this->venta_modelo->insert($data);
-            }
-
-            $detalle_venta = [
-                'id_venta'         => $venta_id,
-                'id_producto'      => $item['id'],
-                'cantidad' => $item['qty'],
-                'precio'   => $item['price'],
-            ];
-
-            $nuevoStock = $producto['stock'] - $item['qty'];
-            $this->productos_modelo->update($item['id'], ['stock' => $nuevoStock]);
-
-            $this->detalleventa_modelo->insert($detalle_venta);
-
-            $total_venta += $item['subtotal'];
+        if ($stock < $producto["qty"]) {
+            $exceededStock = true;
+            $nombreProducto = $productStock["nombre_prod"]; // Suponiendo que el nombre del producto se encuentra en el campo "nombre".
+            break; // Salir del bucle si se encuentra un producto con stock insuficiente
         }
-        $this->venta_modelo->update($venta_id, ['total_venta' => $total_venta]);
 
-        $this->cart->destroy();
-        //mensaje de exito
-        session()->setFlashdata('success', 'Compra realizada con éxito!!');
-        return redirect()->route('catalogo');
+        $montoTotal += $producto["price"] * $producto["qty"];
+    }
+
+    if ($exceededStock) {
+        $mensaje = "La cantidad seleccionada para el producto '$nombreProducto' supera el stock disponible.";
+        session()->setFlashdata('mensaje_stock', $mensaje);
+        // Redireccionar de vuelta al carrito o a la página correspondiente
+        return redirect()->to('ver_carrito');
+    }
+
+    $ventaCabecera = new Ventas_Model();
+    $idSession = intval(session()->id);
+
+    $fechaActual = date('Y-m-d'); // Obtener la fecha actual en el formato deseado
+
+    $idCabecera = $ventaCabecera->insert([
+        "total_venta" => $montoTotal,
+        "id_cliente" => $idSession,
+        "fecha_venta" => $fechaActual // Agregar la fecha actual al array de datos
+    ]);
+
+    $ventaDetalle = new DetalleVenta_Model();
+
+    foreach ($productos as $producto) {
+        // Actualizar el stock del producto
+        $newStock = $productStock["stock"] - $producto["qty"];
+        $productModel->update($producto["id"], ['stock' => $newStock]);
+
+        // Insertar en la tabla de ventas detalle
+        $ventaDetalle->insert([
+            "id_venta" => $idCabecera,
+            "id_producto" => $producto['id'],
+            "cantidad" => $producto["qty"],
+            "precio" => $producto["price"]
+        ]);
+    }
+
+    $cart->destroy();
+    session()->setFlashdata('succescompra', '¡Gracias por su compra!');
+    // Redireccionar a la página de confirmación de compra
+    return redirect()->route('ver_carrito');
 
     }
-        
+
+    
     public function factura($venta_id){
 
         $detalle_ventas = new DetalleVenta_Model();

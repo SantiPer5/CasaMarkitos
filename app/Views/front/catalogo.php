@@ -38,7 +38,7 @@
             <div class="row product-row">
                 <?php foreach ($productos as $producto): ?>
                     <?php if ($producto['categoria_id'] == $categoria['categoria_id']): ?> <!-- Muestra solo los productos de la categoria actual -->
-                        <?php if ($producto['estado'] == 0) continue; ?> <!-- Muestra solo los productos 1 Disponibles -->
+                        <?php if ($producto['estado'] == 0 || $producto['stock'] == 0) continue; ?> <!-- Omite los productos con estado 0(No disponibles) y los con stock 0 -->
                         <div class="col-md-4">
                             <div class="card product-card">
                                 <img src="<?php echo base_url() ?>/assets/uploads/<?php echo $producto['imagen']; ?>" class="card-img-top product-image" alt="Imagen del producto">

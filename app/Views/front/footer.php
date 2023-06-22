@@ -36,9 +36,9 @@
             <div class="col-md-4 col-sm-6 mb-md-0 mb-4">
                 <h5 class="text-uppercase">Síguenos</h5>
                 <ul class="list-unstyled redes-sociales">
-                    <li><a href="#"><img src="<?php echo base_url('assets/img/facebook.svg')?>" alt="facebook"></a></li>
-                    <li><a href="#"><img src="<?php echo base_url('assets/img/instagram.svg')?>" alt="instagram"></i></a></li>
-                    <li><a href="#"><img src="<?php echo base_url('assets/img/twitter.svg')?>" alt="twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/CasaMarkitos"><img src="<?php echo base_url('assets/img/facebook.svg')?>" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/CasaMarkitos"><img src="<?php echo base_url('assets/img/instagram.svg')?>" alt="instagram"></i></a></li>
+                    <li><a href="https://twitter.com/CasaMarkitos"><img src="<?php echo base_url('assets/img/twitter.svg')?>" alt="twitter"></i></a></li>
                 </ul>
             </div>
         </div>

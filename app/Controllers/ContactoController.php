@@ -5,6 +5,53 @@ use App\Models\Consulta_Model;
 
 class ContactoController extends BaseController {
 
+    public function __construct() {
+        helper(['url', 'form']);
+        // $db = \Config\Database::connect();
+    }
+
+    public function principal() {
+        $consultaModel = new Consulta_Model();
+        $data['consulta'] = $consultaModel->orderBy('id_consulta', 'DESC')->findAll();
+
+        $dato['titulo'] = 'Consultas';
+        echo view('front/header', $dato);
+        echo view('front/navbar');
+        echo view('backend/usuario/consultas', $data);
+        echo view('front/footer');
+    }
+
+    public function noLeidos() {
+        $consultaModel = new Consulta_Model();
+        $data['consulta'] = $consultaModel->orderBy('id_consulta', 'DESC')->findAll();
+
+        $dato['titulo'] = 'Consultas';
+        echo view('front/header', $dato);
+        echo view('front/navbar');
+        echo view('backend/usuario/consultas_no_leidas', $data);
+        echo view('front/footer');
+    }
+
+    public function leido($idConsulta)
+    {
+        $consultaModel = new Consulta_Model();
+    
+        $data = [
+            'leido' => 'SI'
+        ];
+    
+        $consultaModel->update($idConsulta, $data);
+        return redirect()->to('/consulta_contactos'); // Redirige a la página de consultas leídas después de marcar como leída
+    }
+    
+    public function borrarConsulta($idConsulta)
+    {
+        $consultaModel = new Consulta_Model();
+        $consultaModel->delete($idConsulta);
+        return redirect()->to('/consulta_no_leidos')->with('msgc', 'Consulta borrada exitosamente');
+    }
+
+
 
     public function registrar_consulta(){ // Registrar consulta
         $request = \Config\Services::request();

@@ -37,6 +37,9 @@
                                     <?php
                                     $categoria = '';
                                     switch ($prod['categoria_id']) {
+                                        case 0:
+                                            $categoria = 'OFERTAS';
+                                            break;
                                         case 1:
                                             $categoria = 'Articulos de kiosco';
                                             break;
