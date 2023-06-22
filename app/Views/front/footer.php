@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="footer">
-<section class="newsletter f-gris">
+<!-- <section class="newsletter f-gris">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
     <div class="container nosotros">
         <div class="row">
             <div class="col-md-4 col-sm-12 mb-md-0 mb-4">
@@ -49,7 +49,7 @@
                 <p>© 2023 CasaMarkitos Distribuciones</p>
             </div>
             <div class="col-md-6 col-sm-12 text-md-end text-sm-center">
-                <a href="<?php echo base_url('terminos')?>">Términos y condiciones</a> | <a href="#">Política de privacidad</a>
+                <a href="<?php echo base_url('terminos')?>">Términos y condiciones</a>
             </div>
         </div>
     </div>

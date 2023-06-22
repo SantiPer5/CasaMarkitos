@@ -1,15 +1,24 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\Product_Model;
+use App\Models\Categoria_Model;
+use CodeIgniter\Controller;
 
 class Home extends BaseController
 {
     public function index()
     {
+        $categorias = new Categoria_Model();
+        $productos = new Product_Model();
+
+        $categorias = $categorias->findAll();
+        $productos = $productos->findAll();
+
         $data ['titulo'] = 'CasaMarkitos - Distribuidora de productos de bazar y librería en El Colorado, Formosa';
         echo view('front/header', $data);
         echo view('front/navbar');
-        echo view('front/main');
+        echo view('front/main', compact('categorias', 'productos'));
         echo view('front/footer');
     }
     

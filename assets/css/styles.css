@@ -275,17 +275,17 @@ header p {
 
 /* principal-main */
 
-/* .principal{
-    border: solid red;
-} */
-
 .principal h2 {
     font-family: var(--font-secondary);
 
 }
 
-
 /* principal-main fin */
+/* admin view */
+.admin-main .img-fluid {
+    max-width: 500px;
+    height: auto;
+}
 
 
 
@@ -396,9 +396,11 @@ header p {
     margin: 5px;
     padding: 20px;
     padding-right: 0;
-    font-size: 28px;
+    font-size: 1.3rem;
     font-weight: bolder;
 }
+
+
 
 
 /* QUIENES-SOMOS INICIO */
@@ -483,6 +485,8 @@ header p {
 
 .contact {
     padding: 100px 0;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
 }
 
 .address h2,
@@ -717,6 +721,7 @@ input[type="tel"] {
 /* fin */
 
 /* login */
+
 
 .login .card {
     border: none;
@@ -1070,3 +1075,13 @@ input[type="tel"] {
     height: auto;
     object-fit: cover;
 }
+
+.container-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+}
+
+

@@ -42,22 +42,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('/consulta_contactos')?>">Consultas</a>
                     </li>
-                    
-                    <div class="dropdown dropdown-perso dropdown-perso2 nav-item">
-                        <button class="btn dropdown-toggle btn-perso" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</button>
-
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('comercializacion') ?>"><i class="nav-icon fa-solid fa-hand-holding-dollar"></i>Comercialización</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('terminosyusos') ?>"><i class="nav-icon fa-solid fa-file-lines"></i>Términos y Usos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('quienessomos') ?>"><i class="nav-icon fa-solid fa-users"></i>Quienes Somos</a>
-                            </li>
-                        </ul>
-                    </div>
 
 
 
@@ -71,7 +55,7 @@
                     
                     <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end text-small" aria-labelledby="dropdownUser1" style="top: 150%;">
                         <li>
-                        <a class="dropdown-item text-small_bienvenida" href="#"><?php echo "¡Bienvenido " . $nombre . "!" ?></a>
+                        <p class="text-center"><?php echo "¡Bienvenido " . $nombre . "!" ?></p>
                         </li>
                         <li>
                         <a class="dropdown-item" href="<?php echo base_url('logout'); ?>" tabindex="-1" aria-disabled="true"><i class="nav-icon fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a>
@@ -102,6 +86,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('/catalogo')?>">Catalogo</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url('/ver_carrito') ?>">Carrito</a>
+                    </li>
                     
                     <div class="dropdown dropdown-perso dropdown-perso2 nav-item">
                         <button class="btn dropdown-toggle btn-perso" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</button>
@@ -111,7 +98,7 @@
                             <a class="nav-link" href="<?php echo base_url('comercializacion') ?>"><i class="nav-icon fa-solid fa-hand-holding-dollar"></i>Comercialización</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('terminosyusos') ?>"><i class="nav-icon fa-solid fa-file-lines"></i>Términos y Usos</a>
+                            <a class="nav-link" href="<?php echo base_url('terminos') ?>"><i class="nav-icon fa-solid fa-file-lines"></i>Términos y Usos</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url('quienessomos') ?>"><i class="nav-icon fa-solid fa-users"></i>Quienes Somos</a>
@@ -122,15 +109,6 @@
 
 
                 </ul>
-                <!-- SearchBar -->
-                <form class="d-flex searchbar" role="search">
-                    <input type="text" class="form-control border-0 rounded-pill me-2"
-                        placeholder="Buscar productos...">
-                    <button class="btn search-icon" type="button"><img
-                            src="assets\img\buscar.png" alt="buscar"><i class="fas fa-search"></i></button>
-                </form>
-
-                <form class="d-flex align-items-center">
             
 
                     <div class="dropdown text-end">
@@ -140,12 +118,7 @@
                     
                     <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end text-small" aria-labelledby="dropdownUser1" style="top: 150%;">
                         <li>
-                        <a class="dropdown-item text-small_bienvenida" href="#"><?php echo "¡Bienvenido " . $nombre . "!" ?></a>
-                        </li>
-                        <li>
-                        <a class="dropdown-item" href="#"><i class="nav-icon fa-solid fa-user"></i>Perfil</a></li>
-                        <li>
-                        <a class="dropdown-item" href="<?php echo base_url('/ver_carrito') ?>"><i class="nav-icon fa-solid fa-cart-arrow-down"></i>Carrito</a>
+                        <p class="text-center"><?php echo "¡Bienvenido " . $nombre . "!" ?></p>
                         </li>
                         <li><a class="dropdown-item" href="<?php echo base_url('/ventas') ?>"><i class="nav-icon fa-solid fa-gear"></i>Mis Compras</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -197,13 +170,6 @@
                         <a class="nav-link" href="<?php echo base_url('singup')?>">Registrarme</a>
                     </li>
                 </ul>
-                <!-- SearchBar -->
-                <form class="d-flex searchbar" role="search">
-                    <input type="text" class="form-control border-0 rounded-pill me-2"
-                        placeholder="Buscar productos...">
-                    <button class="btn search-icon" type="button"><img
-                            src="assets\img\buscar.png" alt="buscar"><i class="fas fa-search"></i></button>
-                </form>
 
             </div>
         </div>
