@@ -88,13 +88,13 @@
                     <?php foreach ($productos as $producto): ?>
                         <?php if ($producto['categoria_id'] != 0 || $producto['estado'] == 0 || $producto['stock'] == 0) continue; ?>
                         <div class="swiper-slide">
-                            <div class="card">
+                            <div class="card product-card">
                                 <img src="<?php echo base_url() ?>/assets/uploads/<?php echo $producto['imagen']; ?>" class="card-img-top" alt="Imagen del producto">
                                 <div class="card-body">
                                     <h4 class="card-title"><?php echo $producto['nombre_prod']; ?></h4>
                                     <p class="card-text"><?php echo $producto['descripcion']; ?></p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                    <a href="<?php echo base_url('catalogo') ?>" class="btn btn-success">Ver en catalogo</a>
+                                    <a href="<?php echo base_url('catalogo') ?>" class="card-link">Ver en catalogo</a>
                                         <span class="card-price">$<?php echo $producto['precio']; ?></span>
                                     </div>
                                 </div>

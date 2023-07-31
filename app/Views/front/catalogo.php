@@ -5,7 +5,7 @@
     ?>
 
 
-<div class="container">
+<div class="catalogo">
     <h2 class="catalog-title">Catálogo de Productos</h2>
         
     <!-- Boton de wsp flotante-->

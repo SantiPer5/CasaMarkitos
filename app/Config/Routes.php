@@ -48,6 +48,10 @@ $routes->get('/consulta_leido/(:num)', 'contactoController::leido/$1');
 /* Rutas de registro de usuario */
 $routes->get('/singup', 'authController::singup'); 
 $routes->post('/enviar-form', 'authController::register');
+/* Editar usuario */
+$routes->get('/miperfil', 'authController::miPerfil');
+$routes->post('/editarPerfil', 'authController::editarPerfil');
+
 
 /* Rutas de login */
 $routes->get('/login', 'loginController::login');
@@ -78,7 +82,7 @@ $routes->get('/carrito-comprar', 'ventasController::registrar_venta'); //Compra/
 //Rutas ventas
 $routes->get('/ventas', 'ventasController::ventas');
 $routes->get('/factura/(:num)', 'ventasController::factura/$1');
-
+$routes->get('/generarfactura', 'ventasController::generarFactura');
 
 
 /*

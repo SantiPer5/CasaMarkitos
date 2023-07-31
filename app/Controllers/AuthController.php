@@ -109,4 +109,93 @@ class AuthController extends Controller
                 echo view('front/footer');
                 return; 
     }
+
+    public function miPerfil(){
+        
+            //Obtenemos los datos desde la bdd
+            $userModel = new Usuarios_Model();
+            $id_usuario_logueado = intval(session()->id);
+
+            //Obtén el usuario desde la base da datos utilizando el ID del usuario logueado
+            $usuario = $userModel->find($id_usuario_logueado);
+
+            //Pasa el usuario a la vista
+            $data['usuario'] = $usuario;
+
+
+            $data['titulo'] = 'Mi Perfil';
+                echo view('front/header', $data);
+                echo view('front/navbar');
+                echo view('backend/usuario/perfil', $data);
+                echo view('front/footer');
+                return;
+        }
+
+
+            
+        public function editarPerfil($id = null) {
+            // Verificar que el usuario esté logueado antes de permitir el acceso a la función de edición del perfil.
+            if (!intval(session()->id)) {
+                return redirect()->to(base_url('/login'));
+            }
+        
+            $userModel = new Usuarios_Model();
+        
+            // Validar el formulario de edición antes de realizar la actualización.
+            if ($this->request->getMethod() === 'post') {
+                $rules = [
+                    'nombre' => 'required|min_length[3]|max_length[50]',
+                    'apellido' => 'required|min_length[3]|max_length[50]',
+                    'telefono' => 'required|min_length[8]|max_length[20]',
+                    'rsocial' => 'min_length[3]|max_length[100]',
+                    'domicilio' => 'min_length[5]|max_length[200]',
+                    'provincia' => 'min_length[3]|max_length[50]',
+                    'cpostal' => 'min_length[4]|max_length[10]',
+                    'cuit' => 'min_length[10]|max_length[12]',
+                    'condicioniva' => 'min_length[3]|max_length[100]',
+                ];
+        
+                if ($this->validate($rules)) {
+                    // Obtener el ID del usuario logueado desde la sesión.
+                    $id_usuario_logueado = intval(session()->id);
+        
+                    // Actualizar los datos del perfil en la base de datos.
+                    $data = [
+                        'nombre' => $this->request->getPost('nombre'),
+                        'apellido' => $this->request->getPost('apellido'),
+                        'telefono' => $this->request->getPost('telefono'),
+                        'rsocial' => $this->request->getPost('rsocial'),
+                        'domicilio' => $this->request->getPost('domicilio'),
+                        'provincia' => $this->request->getPost('provincia'),
+                        'cpostal' => $this->request->getPost('cpostal'),
+                        'cuit' => $this->request->getPost('cuit'),
+                        'condicioniva' => $this->request->getPost('condicioniva')
+                    ];
+        
+                    $userModel->update($id_usuario_logueado, $data);
+        
+                    // Mostrar mensaje de éxito.
+                    session()->setFlashdata('success', 'Perfil actualizado correctamente');
+                    return redirect()->to(base_url('/miperfil'));
+                } else {
+                    // Mostrar errores de validación.
+                    $data['validation'] = $this->validator;
+                }
+            }
+        
+            // Obtener los datos del usuario para mostrar en el formulario de edición.
+            $id_usuario_logueado = intval(session()->id);
+            $usuario = $userModel->find($id_usuario_logueado);
+        
+            // Pasar el usuario a la vista.
+            $data['usuario'] = $usuario;
+        
+            // Cargar la vista para editar el perfil.
+            $data['titulo'] = 'Editar Perfil';
+            echo view('front/header', $data);
+            echo view('front/navbar');
+            echo view('backend/usuario/perfil', $data); // Crea la vista editar_perfil.php con el formulario de edición
+            echo view('front/footer');
+        }
+        
 }

@@ -1,8 +1,11 @@
+
+
 <section class="container container-table-productos-factura mt-3 mb-3">
     <!-- <?php $session = session();
         $nombre = $session->get('nombre');
         $perfil = $session->get('perfil_id');
     ?> -->
+
 
     <div class="row">
         <div class="col-md-6">
@@ -15,9 +18,14 @@
                 <div class="card-body">
                     <h5 class="card-title">Datos del Comprador</h5>
                     <p class="card-text">
-                        <strong>Nombre: </strong><?php echo isset($ventaDetalle[0]['nombre']) ? $ventaDetalle[0]['nombre'] : ''; ?>
+                        <strong>Nombre:</strong> <?php echo isset($ventaDetalle[0]['nombre']) ? $ventaDetalle[0]['nombre'] : ''; ?>
                         <?php echo isset($ventaDetalle[0]['apellido']) ? $ventaDetalle[0]['apellido'] : ''; ?><br>
                         <!-- Agrega aquí los demás datos del comprador que deseas mostrar -->
+                        <strong>Razón Social:</strong> <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?><br>
+                        <strong>Provincia:</strong> <?php echo isset($ventaDetalle[0]['provincia']) ? $ventaDetalle[0]['provincia'] : ''; ?><br>
+                        <strong>Domicilio:</strong> <?php echo isset($ventaDetalle[0]['domicilio']) ? $ventaDetalle[0]['domicilio'] : ''; ?><br>
+                        <strong>CUIT/CUIL:</strong> <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?><br>
+                        <strong>Fecha:</strong> <?php echo isset($ventaDetalle[0]['fecha_venta']) ? $ventaDetalle[0]['fecha_venta'] : ''; ?><br>
                     </p>
                 </div>
             </div>
@@ -59,4 +67,10 @@
             </div>
         </div>
     </div>
+    <div class="col-md-6">
+        <a class="btn btn-primary" href="<?= base_url('/generarfactura')?>">Imprimir PDF</a>
+    </div>
 </section>
+
+
+

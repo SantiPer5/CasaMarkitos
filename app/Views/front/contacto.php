@@ -23,8 +23,9 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="address">
-          <h2>¡Ven a visitarnos!</h2>
+          <h2>¡Vení a visitarnos!</h2>
           <p>Av. 25 de Mayo y Sarmiento</p>
+          <p>WhatsApp 3704 204158</p>
           <p>El Colorado, Formosa, Argentina</p>
         </div>
         <div class="form">

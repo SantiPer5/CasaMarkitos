@@ -5,6 +5,7 @@
         $session = session();
         $nombre = $session->get('nombre');
         $perfil = $session->get('perfil_id');
+        $persona = $session->get('id_persona');
     ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-none fixed-top">
@@ -118,9 +119,10 @@
                     
                     <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end text-small" aria-labelledby="dropdownUser1" style="top: 150%;">
                         <li>
-                        <p class="text-center"><?php echo "¡Bienvenido " . $nombre . "!" ?></p>
+                        <p class="text-center" style="background-color: #ffcc00; padding: 10px;"><?php echo "¡Hola " . $nombre . "!" ?></p>
                         </li>
-                        <li><a class="dropdown-item" href="<?php echo base_url('/ventas') ?>"><i class="nav-icon fa-solid fa-gear"></i>Mis Compras</a></li>
+                        <li><a class="dropdown-item" href="<?php echo base_url('/miperfil') ?>"><i class="nav-icon"></i>Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="<?php echo base_url('/ventas') ?>"><i class="nav-icon"></i>Mis Compras</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li>
                         <a class="dropdown-item" href="<?php echo base_url('logout'); ?>" tabindex="-1" aria-disabled="true"><i class="nav-icon fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a>
