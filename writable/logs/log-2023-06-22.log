@@ -527,6 +527,7 @@ INFO - 2023-06-22 03:51:18 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-06-22 03:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-22 03:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-22 03:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
 CRITICAL - 2023-06-22 03:56:11 --> Cache unable to write to "C:\xampp\htdocs\CasaMarkitos\writable\cache/".
 in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 62.
  1 SYSTEMPATH\Cache\Handlers\FileHandler.php(62): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\CasaMarkitos\\writable\\cache/')
@@ -765,3 +766,10 @@ INFO - 2023-06-22 13:04:51 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-06-22 13:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-22 13:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-22 13:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2023-06-22 05:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 05:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 05:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 05:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-22 05:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> f9be12a8ea27728f59d587471213e3a6d515924b
