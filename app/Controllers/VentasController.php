@@ -8,6 +8,10 @@ use App\Models\Ventas_Model;
 use App\Models\DetalleVenta_Model;
 use App\Models\Usuarios_Model;
 use CodeIgniter\Controller;
+use Dompdf\Dompdf;
+use Dompdf\Option;
+use Dompdf\Exception as DomException;
+use Dompdf\Options;
 
 
 
@@ -110,7 +114,11 @@ class VentasController extends Controller{
             echo view('front/header', $data);
             echo view('front/navbar');
             echo view('backend/ventas/factura', $data);
+            echo '<div style="display: flex; justify-content: center; margin: 20px">
+            <a class="btn btn-primary" href="'. base_url("generarfactura/{$venta_id}") .'" style="margin: 0 auto; background-color: #c62828; border-color: #554b4b;">Generar Factura PDF</a>
+          </div>';
             echo view('front/footer');
+            
     }
     
     
@@ -136,8 +144,31 @@ class VentasController extends Controller{
                 echo view('front/footer');
         } 
 
-        public function generarFactura(){
-            echo view('backend/ventas/generarfactura');
+        public function generarFactura($venta_id){
+            
+            //Obtengo el contenido HTML de la pagina
+            $detalle_ventas = new DetalleVenta_Model();
+            $data['ventaDetalle'] = $detalle_ventas->getDetalles($venta_id); 
+
+
+            $contenidoHTML = view('backend/ventas/generarfactura', $data);
+
+            
+
+            //Creo el objeto dompdf
+            $dompdf = new \Dompdf\Dompdf();
+
+            $dompdf->setBasePath(base_url());
+
+            // Configuración para permitir cargar imágenes externas
+            /* $dompdf->getOptions()->set('isRemoteEnabled', true); */
+
+            $dompdf->loadHtml($contenidoHTML);
+            $dompdf->setPaper('A4', 'portrait');
+
+            $dompdf->render();
+
+            $dompdf->stream('Factura.pdf' , ['Attachment' => 1]);
         }
 
 

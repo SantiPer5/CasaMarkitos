@@ -22,8 +22,6 @@
                         <th>Total de Compra</th>
                     <?php endif; ?>
                     <th>Accion</th>
-
-                    <!-- Agrega aquí las columnas adicionales que deseas mostrar -->
                 </tr>
             </thead>
             <tbody>

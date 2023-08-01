@@ -1,0 +1,707 @@
+CRITICAL - 2023-08-01 16:40:32 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 194.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-01 14:42:00 --> Cache unable to write to "C:\xampp\htdocs\CasaMarkitos\writable\cache/".
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 62.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(62): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('C:\\xampp\\htdocs\\CasaMarkitos\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(60): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(115): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(110): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Common.php(73): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\CodeIgniter.php(696): cache()
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->displayCache(Object(Config\Cache))
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 14:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:00 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:02 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:05 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:05 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:08 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:12 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:13 --> Cart Class Initialized
+INFO - 2023-08-01 14:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:14 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:16 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:16 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:17 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:17 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:22 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:44:26 --> Cart Class Initialized
+INFO - 2023-08-01 14:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:15 --> Cart Class Initialized
+INFO - 2023-08-01 14:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:17 --> Cart Class Initialized
+INFO - 2023-08-01 14:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:17 --> Cart Class Initialized
+INFO - 2023-08-01 14:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 14:46:05 --> Undefined variable $ventaDetalle
+in APPPATH\Views\backend\ventas\generarfactura.php on line 49.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ventaDetalle', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(140): view('backend/ventas/generarfactura')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 14:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 14:48:19 --> syntax error, unexpected token "<<"
+in APPPATH\Controllers\ContactoController.php on line 75.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\contactoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\contactoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\contactoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\contactoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 14:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 14:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:13 --> Cart Class Initialized
+INFO - 2023-08-01 20:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:11:22 --> Cart Class Initialized
+INFO - 2023-08-01 20:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:12:18 --> Cart Class Initialized
+INFO - 2023-08-01 20:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:38:25 --> Undefined variable $ventaDetalle
+in APPPATH\Views\backend\ventas\generarfactura.php on line 47.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ventaDetalle', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(142): view('backend/ventas/generarfactura')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:38:35 --> Undefined variable $ventaDetalle
+in APPPATH\Views\backend\ventas\generarfactura.php on line 47.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ventaDetalle', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(142): view('backend/ventas/generarfactura')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:39:18 --> Undefined variable $ventaDetalle
+in APPPATH\Views\backend\ventas\factura.php on line 46.
+ 1 APPPATH\Views\backend\ventas\factura.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ventaDetalle', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\factura.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\factura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/factura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(142): view('backend/ventas/factura')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:40:18 --> Undefined variable $venta_id
+in APPPATH\Controllers\VentasController.php on line 144.
+ 1 APPPATH\Controllers\VentasController.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $venta_id', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\VentasController.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:40:49 --> Too few arguments to function App\Controllers\VentasController::generarFactura(), 0 passed in C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\VentasController.php on line 140.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 20:58:51 --> Undefined variable $venta_id
+in APPPATH\Controllers\VentasController.php on line 146.
+ 1 APPPATH\Controllers\VentasController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $venta_id', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\VentasController.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 20:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 20:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 21:02:44 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\VentasController.php on line 148.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\ventasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ventasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ventasController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ventasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 21:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 21:07:42 --> Class "App\Controllers\Dompdf" not found
+in APPPATH\Controllers\VentasController.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 21:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 21:22:06 --> syntax error, unexpected variable "$dompdf"
+in APPPATH\Controllers\VentasController.php on line 155.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\ventasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ventasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ventasController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ventasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 21:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 21:24:50 --> Invalid file: "backend/ventas/ffactura.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backend/ventas/ffactura.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/ffactura', [], true)
+ 3 APPPATH\Controllers\VentasController.php(153): view('backend/ventas/ffactura', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 21:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 21:37:09 --> Undefined variable $perfil
+in APPPATH\Views\backend\ventas\generarfactura.php on line 8.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfil', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(153): view('backend/ventas/generarfactura', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 21:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 21:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 22:07:07 --> Undefined variable $perfil
+in APPPATH\Views\backend\ventas\generarfactura.php on line 15.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perfil', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(156): view('backend/ventas/generarfactura', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 22:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 22:10:36 --> Undefined variable $titulo
+in APPPATH\Views\backend\ventas\generarfactura.php on line 14.
+ 1 APPPATH\Views\backend\ventas\generarfactura.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\ventas\\generarfactura.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/ventas/generarfactura', [], true)
+ 5 APPPATH\Controllers\VentasController.php(156): view('backend/ventas/generarfactura', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('47')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 22:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:52 --> Cart Class Initialized
+INFO - 2023-08-01 22:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 22:37:35 --> syntax error, unexpected variable "$dompdf"
+in APPPATH\Controllers\VentasController.php on line 156.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\ventasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ventasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ventasController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ventasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 22:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 22:38:04 --> Call to undefined function App\Controllers\get_image()
+in APPPATH\Controllers\VentasController.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('39')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 22:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 22:51:04 --> Undefined variable $dompdf
+in APPPATH\Controllers\VentasController.php on line 152.
+ 1 APPPATH\Controllers\VentasController.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dompdf', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\VentasController.php', 152)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-01 22:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 22:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 23:19:23 --> The PHP GD extension is required, but is not installed.
+in FCPATH\vendor\dompdf\dompdf\lib\Cpdf.php on line 5813.
+ 1 FCPATH\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_9E.tmp', 95.13999999999999, 698.6814149187612, 120.0, 23.46483704974271)
+ 2 FCPATH\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_9E.tmp', 95.13999999999999, 119.74374803149607, 120.0, 23.46483704974271, 'normal')
+ 3 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 9 FCPATH\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+10 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(null)
+11 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+12 APPPATH\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:19:29 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\...', 95.14, 698.68141491876, 120.0, 23.464837049743)
+#1 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\...', 95.14, 119.7437480315, 120.0, 23.464837049743, 'normal')
+#2 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#8 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#9 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#10 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#11 C:\xampp\htdocs\CasaMarkitos\app\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+#12 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+#13 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#14 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\CasaMarkitos\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-01 23:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 23:22:16 --> The PHP GD extension is required, but is not installed.
+in FCPATH\vendor\dompdf\dompdf\lib\Cpdf.php on line 5813.
+ 1 FCPATH\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_A2C1.tmp', 95.13999999999999, 698.6814149187612, 120.0, 23.46483704974271)
+ 2 FCPATH\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_A2C1.tmp', 95.13999999999999, 119.74374803149607, 120.0, 23.46483704974271, 'normal')
+ 3 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 9 FCPATH\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+10 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(null)
+11 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+12 APPPATH\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:22:21 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\...', 95.14, 698.68141491876, 120.0, 23.464837049743)
+#1 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\...', 95.14, 119.7437480315, 120.0, 23.464837049743, 'normal')
+#2 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#8 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#9 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#10 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#11 C:\xampp\htdocs\CasaMarkitos\app\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+#12 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+#13 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#14 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\CasaMarkitos\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-01 23:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 23:28:15 --> The PHP GD extension is required, but is not installed.
+in FCPATH\vendor\dompdf\dompdf\lib\Cpdf.php on line 5813.
+ 1 FCPATH\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_1BA3.tmp', 95.13999999999999, 698.6814149187612, 120.0, 23.46483704974271)
+ 2 FCPATH\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_1BA3.tmp', 95.13999999999999, 119.74374803149607, 120.0, 23.46483704974271, 'normal')
+ 3 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 9 FCPATH\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+10 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(null)
+11 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+12 APPPATH\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:28:20 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\...', 95.14, 698.68141491876, 120.0, 23.464837049743)
+#1 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\...', 95.14, 119.7437480315, 120.0, 23.464837049743, 'normal')
+#2 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#8 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#9 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#10 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#11 C:\xampp\htdocs\CasaMarkitos\app\Controllers\VentasController.php(175): Dompdf\Dompdf->render()
+#12 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+#13 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#14 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\CasaMarkitos\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-01 23:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-01 23:31:55 --> The PHP GD extension is required, but is not installed.
+in FCPATH\vendor\dompdf\dompdf\lib\Cpdf.php on line 5813.
+ 1 FCPATH\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_7946.tmp', 95.13999999999999, 698.6814149187612, 120.0, 23.46483704974271)
+ 2 FCPATH\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\AppData\\Local\\Temp\\ca_7946.tmp', 95.13999999999999, 119.74374803149607, 120.0, 23.46483704974271, 'normal')
+ 3 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+ 4 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+ 5 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+ 6 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 7 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 8 FCPATH\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+ 9 FCPATH\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+10 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(null)
+11 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+12 APPPATH\Controllers\VentasController.php(171): Dompdf\Dompdf->render()
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 23:32:00 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 257953792 bytes)
+【Previous Exception】
+Exception
+The PHP GD extension is required, but is not installed.
+#0 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Adapter\CPDF.php(669): Dompdf\Cpdf->addPngFromFile('C:\\Users\\Santi\\...', 95.14, 698.68141491876, 120.0, 23.464837049743)
+#1 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer\Image.php(65): Dompdf\Adapter\CPDF->image('C:\\Users\\Santi\\...', 95.14, 119.7437480315, 120.0, 23.464837049743, 'normal')
+#2 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(289): Dompdf\Renderer\Image->render(Object(Dompdf\FrameDecorator\Image))
+#3 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(128): Dompdf\Renderer->_render_frame('image', Object(Dompdf\FrameDecorator\Image))
+#4 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Image))
+#5 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#6 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#7 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Renderer.php(195): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#8 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameReflower\Page.php(149): Dompdf\Renderer->render(Object(Dompdf\FrameDecorator\Block))
+#9 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(913): Dompdf\FrameReflower\Page->reflow(NULL)
+#10 C:\xampp\htdocs\CasaMarkitos\vendor\dompdf\dompdf\src\Dompdf.php(765): Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#11 C:\xampp\htdocs\CasaMarkitos\app\Controllers\VentasController.php(171): Dompdf\Dompdf->render()
+#12 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(934): App\Controllers\VentasController->generarFactura('45')
+#13 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasController))
+#14 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\CasaMarkitos\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-01 23:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-01 23:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

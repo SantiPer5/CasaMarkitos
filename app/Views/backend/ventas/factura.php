@@ -1,5 +1,4 @@
 
-
 <section class="container container-table-productos-factura mt-3 mb-3">
     <!-- <?php $session = session();
         $nombre = $session->get('nombre');
@@ -67,10 +66,6 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <a class="btn btn-primary" href="<?= base_url('/generarfactura')?>">Imprimir PDF</a>
-    </div>
 </section>
-
 
 

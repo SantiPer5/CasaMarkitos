@@ -102,7 +102,7 @@
                             <a class="nav-link" href="<?php echo base_url('terminos') ?>"><i class="nav-icon fa-solid fa-file-lines"></i>Términos y Usos</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('quienessomos') ?>"><i class="nav-icon fa-solid fa-users"></i>Quienes Somos</a>
+                            <a class="nav-link" href="<?php echo base_url('quienessomos') ?>"><i class="nav-icon fa-solid"></i>Quienes Somos</a>
                             </li>
                         </ul>
                     </div>
