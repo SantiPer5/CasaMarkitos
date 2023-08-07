@@ -57,6 +57,7 @@ $routes->post('/editarPerfil', 'authController::editarPerfil');
 $routes->get('/login', 'loginController::login');
 $routes->post('/authLogin', 'loginController::auth');
 $routes->get('/logout', 'loginController::logout');
+$routes->get('/loginCatalogo', 'loginController::loginCatalogo');
 
 /* Rutas Productos */
 $routes->get('/crud_productos', 'productController::index'); //Listado de productos

@@ -475,7 +475,7 @@ header p {
 }
 
 .parallax {
-    background-image: url(../img/about_us/fondo-quienes.jpeg);
+    background-image: url(../img/about_us/pedi2.svg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -924,12 +924,29 @@ input[type="tel"] {
     padding: 1em;
 }
 
+.terminos-condiciones {
+    min-height: 100vh;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+}
+
+.terminos-condiciones .container{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
 /* Estilos del CATALOGO */
 
 /* Estilos generales */
+.section-catalogo{
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+}
+
 .catalogo {
     min-height: 100vh;
     padding: 20px;
+    margin: 2vh;
+    background-color: #ffffffab;
 }
 
 .catalog-title {
@@ -1249,15 +1266,39 @@ input[type="tel"] {
     font-weight: bold;
     font-size: 1.1rem;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 500px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 p.card-text {
     text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 500px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-text {
     font-size: 1rem;
     line-height: 1.6;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 500px;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .table {
@@ -1270,4 +1311,20 @@ p.card-text {
 
 .row.justify-content-end {
     margin-top: 20px;
+}
+
+/* VentasListar */
+
+.listar-ventas {
+    min-height: 100vh;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+}
+
+/* factura */
+
+.section-factura {
+    min-height: 100vh;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
 }

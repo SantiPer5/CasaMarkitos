@@ -18,6 +18,13 @@
 					</div>";
 			}
 			?>
+		<!-- Mostrar mensaje -->
+		<?php if (session()->getFlashdata('message')) {
+				echo " <div class='h4 text-center alert alert-warning alert-dismissible' style='border-radius: 40px;'>
+					<button type='button' class='btn-close' data-bs-dismiss='alert' style='font-size:1.2rem; color: red;'></button>" . session()->getFlashdata('msg') . "
+					</div>";
+			}
+			?>
 		</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6">

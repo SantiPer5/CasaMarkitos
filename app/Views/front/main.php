@@ -41,16 +41,16 @@
         <?php } else if ($perfil == '2') { ?>
 <div class="user-main">
             <!-- Carrousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselMainIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets\img\gilette.jpeg" class="d-block w-100" alt="Imagen 1">
+                <img src="assets\img\casamarkitoss.svg" class="d-block w-100" alt="Imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="assets\img\magistral.jpeg" class="d-block w-100" alt="Imagen 2">
+                <img src="assets\img\promociones.svg" class="d-block w-100" alt="Imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="assets\img\pantene.jpeg" class="d-block w-100" alt="Imagen 3">
+                <img src="assets\img\contactanos.svg" class="d-block w-100" alt="Imagen 3">
             </div>
         </div>
     </div> 
@@ -60,7 +60,7 @@
         <h2><?php echo "¡Hola " . $nombre . ", bienvenido a nuestro mayorista y minorista online!!" ?></h2>
         </div>
 
-        <div class="container principal-main">
+       <!--  <div class="container principal-main">
             <p>Bienvenido a nuestra empresa Casa Markitos. Somos una empresa familiar que se dedica a ofrecer una
             amplia variedad de productos para el hogar, la oficina y la vida cotidiana. Ofrecemos una amplia gama de
             productos, desde artículos de papelería y librería hasta productos de bazar y artículos para el hogar.</p>
@@ -68,7 +68,7 @@
             <p> Nuestro principal objetivo es ofrecer productos de alta calidad a precios competitivos para satisfacer las
             necesidades de nuestros clientes. Todos nuestros productos son seleccionados cuidadosamente y provienen de
             proveedores confiables y de renombre en la industria.</p>
-        </div>
+        </div> -->
     </div>
 
 
@@ -113,18 +113,18 @@
 <!-- ------------------------------- MAIN PARA NO LOGEADOS  ------------------------------- -->
 <div class="user-nolog">
     <!-- Carrousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets\img\gilette.jpeg" class="d-block w-100" alt="Imagen 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets\img\magistral.jpeg" class="d-block w-100" alt="Imagen 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets\img\pantene.jpeg" class="d-block w-100" alt="Imagen 3">
-                </div>
+    <div id="carouselMainIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets\img\casamarkitoss.svg" class="d-block w-100" alt="Imagen 1">
             </div>
+            <div class="carousel-item">
+                <img src="assets\img\promociones.svg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets\img\contactanos.svg" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
     </div> 
 
     <div class="principal">
@@ -133,7 +133,7 @@
             </div>
 
             <div class="container principal-main">
-                <p>Bienvenido a nuestra empresa Cara Markitos. Somos una empresa familiar que se dedica a ofrecer una
+                <p>Bienvenido a nuestra empresa CasaMarkitos. Somos una empresa familiar que se dedica a ofrecer una
                 amplia variedad de productos para el hogar, la oficina y la vida cotidiana. Ofrecemos una amplia gama de
                 productos, desde artículos de papelería y librería hasta productos de bazar y artículos para el hogar.</p>
 

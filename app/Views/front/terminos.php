@@ -1,5 +1,5 @@
 <!-- terminos y condiciones -->
-<section class="terminos">
+<section class="terminos-condiciones">
   <div class="container">
     <h2>Términos y Condiciones</h2>
     

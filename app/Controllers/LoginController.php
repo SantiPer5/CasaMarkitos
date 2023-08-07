@@ -19,6 +19,12 @@ class LoginController extends BaseController {
         echo view('front/footer');
     }
 
+    public function loginCatalogo(){
+        $session = session();
+        $session->setFlashdata('msg', 'Por favor registrese para poder realizar compras');
+                return redirect()->to(base_url('/login'));
+    }
+
     public function auth(){
         $session = session(); // Se crea una instancia de la clase session
         $model = new Usuarios_Model(); // Se crea una instancia del modelo Usuarios_Model'

@@ -149,11 +149,9 @@ class VentasController extends Controller{
             //Obtengo el contenido HTML de la pagina
             $detalle_ventas = new DetalleVenta_Model();
             $data['ventaDetalle'] = $detalle_ventas->getDetalles($venta_id); 
-
+            $filename = 'factura_CASAMARKITOS' . uniqid() . '.pdf';
 
             $contenidoHTML = view('backend/ventas/generarfactura', $data);
-
-            
 
             //Creo el objeto dompdf
             $dompdf = new \Dompdf\Dompdf();
@@ -168,7 +166,7 @@ class VentasController extends Controller{
 
             $dompdf->render();
 
-            $dompdf->stream('Factura.pdf' , ['Attachment' => 1]);
+            $dompdf->stream($filename, ['Attachment' => 1]);
         }
 
 
