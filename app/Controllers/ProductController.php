@@ -40,7 +40,7 @@ class ProductController extends Controller{
 
     public function guardar(){
         $input = $this->validate([
-            'nombre_prod' => 'required|min_length[3]|max_length[255]',
+            'nombre_prod' => 'required|min_length[3]|max_length[60]',
             'precio' => 'required|numeric',
             'stock' => 'required|numeric',
             'imagen' => 'mime_in[imagen,image/jpg,image/jpeg,image/gif,image/png,image/webp,image/ico,image/jfif]|max_size[imagen,4096]',
@@ -119,9 +119,9 @@ class ProductController extends Controller{
 
         // Validación de campos
         $validation = $this->validate([
-            'nombre_prod' => 'required|min_length[3]|max_length[255]',
+            'nombre_prod' => 'required|min_length[3]|max_length[60]',
             'precio' => 'required|numeric',
-            'descripcion' => 'max_length[255]',
+            'descripcion' => 'max_length[50]',
             'stock' => 'required|numeric',
         ]);
 

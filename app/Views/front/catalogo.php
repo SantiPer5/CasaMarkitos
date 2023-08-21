@@ -51,27 +51,34 @@
                                     <div class="card-body">
                                         <h5 class="card-title product-name"><?php echo $producto['nombre_prod']; ?></h5>
                                         <p class="card-text product-description"><?php echo $producto['descripcion']; ?></p>
-                                        <p class="card-text product-price">Precio: $<?php echo $producto['precio']; ?></p>
-                                        <p class="card-text product-stock">Stock: <?php echo $producto['stock']; ?></p>
+                                        <p class="card-text product-price">$<?php echo $producto['precio']; ?></p>
+                                        <!-- <p class="card-text product-stock">Stock: <?php echo $producto['stock']; ?></p> -->
                                         <div class="text-center">
                                             
                                         
                                         <!-- Vista para usuario registrado -->
                                             <?php if ($perfil == 2) : 
-                                                echo form_open('agregar_carrito');
+                                                /* echo form_open('agregar_carrito');
                                                 echo form_hidden('agregar_carrito');
                                                     echo form_hidden('producto_id', $producto['producto_id']);
                                                     echo form_hidden('precio', $producto['precio']);
                                                     echo form_hidden('nombre', $producto['nombre_prod']);
                                                     echo form_submit('Comprar', 'Agregar al Carrito', 'class="btn btn-success btn-sm btn-add-to-cart"');
-                                                echo form_close();
+                                                echo form_close(); */
                                                 ?> 
+                                                <button class="btn btn-success btn-sm btn-add-to-cart"
+                                                        data-producto-id="<?php echo $producto['producto_id']; ?>"
+                                                        data-precio="<?php echo $producto['precio']; ?>"
+                                                        data-nombre="<?php echo $producto['nombre_prod']; ?>">
+                                                    Agregar al Carrito
+                                                </button>
                                             <!-- Vista para usuario no registrado -->
                                             <?php else : ?> 
                                                 
                                                 <a href="<?php echo base_url() ?>/loginCatalogo" class="btn btn-primary btn-sm btn-buy">Comprar</a>
                                                 <a href="<?php echo base_url() ?>/loginCatalogo" class="btn btn-success btn-sm btn-add-to-cart">Añadir al Carro</a>
                                             
+                                                
                                             <?php endif;
                                             ?>
                                         </div>
@@ -122,3 +129,33 @@
     }
 </script>
 
+<script>
+    $(document).ready(function() {
+        $('.btn-add-to-cart').click(function() {
+            var producto_id = $(this).data('producto-id');
+            var precio = $(this).data('precio');
+            var nombre = $(this).data('nombre');
+            
+            $.ajax({
+                type: 'POST',
+                url: 'agregar_carrito', // Reemplaza esto con la URL correcta para agregar al carrito
+                data: {
+                    producto_id: producto_id,
+                    precio: precio,
+                    nombre: nombre
+                },
+                success: function(response) {
+                    // Actualiza la información del carrito o muestra un mensaje de éxito
+                    // Puedes hacerlo como lo necesites en tu aplicación
+                    /* alert('Producto agregado al carrito con éxito'); */
+                    Swal.fire({
+                        icon: 'success', // Puedes usar 'success', 'error', 'warning', 'info', etc.
+                        title: 'Producto agregado al carrito con éxito',
+                        showConfirmButton: false, // Oculta el botón de confirmación
+                        timer: 1500 // Duración en milisegundos antes de que la notificación se cierre automáticamente
+                    });
+                }
+            });
+        });
+    });
+</script>

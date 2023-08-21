@@ -127,7 +127,7 @@
         </div>
     </div> 
 
-    <div class="principal">
+    <!-- <div class="principal">
             <div class="container title-container">
                 <h2>MAYORISTA Y MINORISTA ONLINE!!!</h2>
             </div>
@@ -141,7 +141,7 @@
                 necesidades de nuestros clientes. Todos nuestros productos son seleccionados cuidadosamente y provienen de
                 proveedores confiables y de renombre en la industria.</p>
             </div>
-        </div>
+        </div> -->
 
     <!-- Carrousel productos -->
     <div class="ofertas">

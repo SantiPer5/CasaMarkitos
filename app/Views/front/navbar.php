@@ -156,13 +156,6 @@
                             href="<?php echo base_url('/catalogo')?>">Catalogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="<?php echo base_url('quienessomos')?>">Sobre nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url('comercializacion')?>">Comercialización</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url('contacto')?>">Contacto</a>
                     </li>
                     <li class="nav-item">
