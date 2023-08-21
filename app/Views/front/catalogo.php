@@ -76,7 +76,7 @@
                                             <?php else : ?> 
                                                 
                                                 <a href="<?php echo base_url() ?>/loginCatalogo" class="btn btn-primary btn-sm btn-buy">Comprar</a>
-                                                <a href="<?php echo base_url() ?>/loginCatalogo" class="btn btn-success btn-sm btn-add-to-cart">Añadir al Carro</a>
+                                                
                                             
                                                 
                                             <?php endif;
@@ -152,7 +152,7 @@
                         icon: 'success', // Puedes usar 'success', 'error', 'warning', 'info', etc.
                         title: 'Producto agregado al carrito con éxito',
                         showConfirmButton: false, // Oculta el botón de confirmación
-                        timer: 1500 // Duración en milisegundos antes de que la notificación se cierre automáticamente
+                        timer: 800 // Duración en milisegundos antes de que la notificación se cierre automáticamente
                     });
                 }
             });

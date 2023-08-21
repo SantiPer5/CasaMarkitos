@@ -91,21 +91,7 @@
                         <a class="nav-link" href="<?php echo base_url('/ver_carrito') ?>">Carrito</a>
                     </li>
                     
-                    <div class="dropdown dropdown-perso dropdown-perso2 nav-item">
-                        <button class="btn dropdown-toggle btn-perso" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mas</button>
-
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('comercializacion') ?>"><i class="nav-icon fa-solid fa-hand-holding-dollar"></i>Comercialización</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('terminos') ?>"><i class="nav-icon fa-solid fa-file-lines"></i>Términos y Usos</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url('quienessomos') ?>"><i class="nav-icon fa-solid"></i>Quienes Somos</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
 
 
 

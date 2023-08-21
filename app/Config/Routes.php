@@ -66,6 +66,9 @@ $routes->post('/guardar', 'productController::guardar'); //Guardar productos
 $routes->get('/borrar/(:num)', 'productController::borrar/$1'); //Borrar productos
 $routes->get('/editar/(:num)', 'productController::editar/$1'); //Formulario de edicion de productos
 $routes->post('/actualizar', 'productController::actualizar'); //Actualizar productos
+/* Disponibilidad de productos */
+$routes->get('disponible/(:num)', 'productController::disponible/$1'); //Disponible productos
+$routes->get('no_disponible/(:num)', 'productController::no_disponible/$1'); //No disponible productos
 
 /* Mostrar productos en el Catalogo */
 $routes->get('/catalogo', 'cartController::catalogo');
@@ -78,6 +81,8 @@ $routes->get('carrito_elimina/(:any)','cartController::remove/$1'); // Elimina u
 $routes->get('/borrar','cartController::borrar_carrito'); //Elimina toda el carrito
 //muestra las compras una vez que realizamos la misma
 $routes->get('/carrito-comprar', 'ventasController::registrar_venta'); //Compra/Registra el carrito
+//actualizar carrito con cantidad de productos
+$routes->post('/actualizar_carrito', 'CartController::actualiza_carrito'); //Actualiza el carrito
 
 
 //Rutas ventas

@@ -116,7 +116,7 @@
     ?>
         <div class="row">
             <div class="col-md-6">
-                <h2 class="text-center mb-5"><?php echo ($perfil == 1) ? 'Factura de Venta' : 'Factura de Compra'; ?></h2>
+                <h2 class="text-center mb-5"><?php echo ($perfil == 1) ? 'Pedido de Venta' : 'Pedido de Compra'; ?></h2>
                 <!-- logo de casa markitos -->
                 <!-- <img class="img-fluid" src="http://localhost/CasaMarkitos/assets/img/f9a6a9437f850c9aace8c28fc0df31a1.png" alt="logo"> -->
                 <h3 class="text-center mb-5">CasaMarkitos</h3>

@@ -78,22 +78,25 @@ class CartController extends BaseController {
         return redirect()->back()->withInput();
     }
 
-    public function actualiza_carrito(){
-        $cart = \Config\Services::cart(); // Se carga la libreria cart
-        
-        $request = \Config\Services::request(); // Se carga la libreria request
-        $cart->update(array(
-            'id' => $request->getPost('producto_id'),
-            'name' => $request->getPost('nombre'),
-            'qty' => 1,
-            'price' => $request->getPost('precio'),
+    public function actualiza_carrito()
+        {
+            // Obtengo los datos del formulario
+            $cart = \Config\Services::cart();
+            $request = \Config\Services::request();
+            $data = $request->getPost();
+            // Recorro el array de productos
+            foreach ($data['cart'] as $producto) {
+                // Actualizo la cantidad de cada producto
+                $cart->update(array(
+                    'rowid' => $producto['rowid'],
+                    'qty'   => $producto['qty']
+                ));
+            }
+            // Redirijo al usuario al carrito
+            return redirect()->to('ver_carrito');
             
-        ));
+        }
 
-        return redirect()->back()->whitInput();
-    }
-
-    
 
 
 }

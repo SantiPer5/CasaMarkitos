@@ -1132,7 +1132,7 @@ input[type="tel"] {
     box-shadow: none;
 }
 
-.container-table-productos-factura .card-body {
+.container-table-productos-factura .datos-cliente {
     padding: 20px;
     background-color: #f5f5f5;
     text-align: right;
@@ -1319,6 +1319,14 @@ p.card-text {
     min-height: 100vh;
     background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
     background-size: cover;
+}
+
+.tabla-ventas {
+    background-color: #fff0f0a1;
+}
+
+table.table.table-striped.tabla-ventas {
+    background-color: #fdfcfc99;
 }
 
 /* factura */

@@ -190,6 +190,35 @@ class ProductController extends Controller{
 
     }
 
+    public function disponible($id = null)
+    {
+        $model = new Product_Model();
+        $data['producto'] = $model->where('producto_id', $id)->first();
+
+        $datos = [
+            'estado' => 1
+        ];
+
+        $model->update($id, $datos);
+        session()->setFlashdata('msg', 'Producto disponible');
+        return $this->response->redirect(base_url('/crud_productos'));
+    }
+
+    public function no_disponible($id = null)
+    {
+        $model = new Product_Model();
+        $data['producto'] = $model->where('producto_id', $id)->first();
+
+        $datos = [
+            'estado' => 0
+        ];
+
+        $model->update($id, $datos);
+        session()->setFlashdata('msg', 'Producto no disponible');
+        return $this->response->redirect(base_url('/crud_productos'));
+    }
+    
+
 
 }
 

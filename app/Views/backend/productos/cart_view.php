@@ -52,7 +52,7 @@
 
                     <?php if ($cart == TRUE) : ?>
                         <?php
-                        echo form_open('carrito_actualiza');
+                        echo form_open('/actualizar_carrito');
                         $gran_total = 0;
                         $i = 1;
 
@@ -67,14 +67,13 @@
                                 <td> <?php echo $i++; ?> </td>
                                 <td> <?php echo $item['name']; ?> </td>
                                 <td>$ <?php echo number_format($item['price'], 2); ?> </td>
-                                <td> <?php echo $item['qty']; ?> </td>
+                                <td>     <input type="number" name="cart[<?php echo $item['id']; ?>][qty]" value="<?php echo $item['qty']; ?>" min="1" style="max-width: 50px"> </td>
                                 <?php $gran_total += ($item['price'] * $item['qty']); ?>
                                 <td> $ <?php echo number_format($item['subtotal'], 2) ?> </td>
                                 <!-- eliminar producto -->
                                 <td>
                                     <a href="<?php echo base_url('carrito_elimina/' . $item['rowid']); ?>" class="btn btn-danger btn-sm">Eliminar</a>
                                 </td>
-                            </tr>
                         <?php
                         endforeach;
                         ?>
@@ -87,15 +86,71 @@
                                 </b>
                             </td>
                             <td colspan="4" align="end">
-                                <a href="<?php echo base_url('carrito-comprar'); ?>" class="btn btn-info">Comprar</a>
-                                <a href="<?php echo base_url('carrito_elimina/all'); ?>" class="btn btn-danger">Vaciar</a>
+                                <!-- actualizar carrito -->
+                                <button type="submit" class="btn btn-info" id="actualizando-precios">Actualizar precios</button>
+                                
+                                <a href="<?php echo base_url('carrito-comprar'); ?>" class="btn btn-success" id="confirmar-pedido">Realizar Pedido</a>
+                                <a href="<?php echo base_url('carrito_elimina/all'); ?>" class="btn btn-danger" id="vaciar-carrito">Vaciar</a>
                             </td>
                         </tr>
                         <?php echo form_close(); ?>
                     <?php endif; ?>
                 </table>
+                <p>IMPORTANTE! Si modifica la cantidad de productos, recuerde actualizar los precios antes de realizar el pedido.</p>
             </div>
         </div>
         <br>
     </div>
 </section>
+
+<script>
+    document.getElementById('confirmar-pedido').addEventListener('click', function(e) {
+        e.preventDefault();
+        Swal.fire({
+            title: '¿Confirmar Pedido?',
+            text: '¿Estás seguro de que deseas realizar el pedido?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Confirmar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                 // Redirige al usuario para confirmar el pedido
+                
+                Swal.fire(
+                    'Hecho!',
+                    'Tu pedido ya fue solicitado, en breve nos comunicaremos via email o whatsapp!',
+                    'success'
+                    ).then((result) => {
+                        window.location.href = "<?php echo base_url('carrito-comprar'); ?>";
+                    })
+                
+            }
+        });
+    });
+
+    document.getElementById('vaciar-carrito').addEventListener('click', function(e) {
+        e.preventDefault();
+        Swal.fire({
+            title: '¿Vaciar Carrito?',
+            text: '¿Estás seguro de que deseas vaciar el carrito?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, Vaciar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Redirige al usuario para vaciar el carrito
+                window.location.href = "<?php echo base_url('carrito_elimina/all'); ?>";
+            }
+        });
+    });
+
+</script>
+
+
+

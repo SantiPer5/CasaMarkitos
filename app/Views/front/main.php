@@ -165,7 +165,7 @@
                                     <h4 class="card-title"><?php echo $producto['nombre_prod']; ?></h4>
                                     <p class="card-text"><?php echo $producto['descripcion']; ?></p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                    <a href="<?php echo base_url('login') ?>" class="btn btn-success">Ver Productos</a>
+                                    <a href="<?php echo base_url('/catalogo') ?>" class="btn btn-success">Ver Productos</a>
                                         <span class="card-price">$<?php echo $producto['precio']; ?></span>
                                     </div>
                                 </div>

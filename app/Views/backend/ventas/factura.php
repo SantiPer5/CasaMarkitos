@@ -6,30 +6,49 @@
     ?> -->
 
     <div class="container container-table-productos-factura mt-3 mb-3">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="text-center mb-5"><?php echo ($perfil == 1) ? 'Factura de Venta' : 'Factura de Compra'; ?></h2>
-                <!-- logo de casa markitos -->
-                <img class="img-fluid" src="<?php echo base_url('assets/img/f9a6a9437f850c9aace8c28fc0df31a1.png'); ?>" alt="logo">
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Datos del Comprador</h5>
-                        <p class="card-text">
-                            <strong>Nombre:</strong> <?php echo isset($ventaDetalle[0]['nombre']) ? $ventaDetalle[0]['nombre'] : ''; ?>
-                            <?php echo isset($ventaDetalle[0]['apellido']) ? $ventaDetalle[0]['apellido'] : ''; ?><br>
-                            <!-- Agrega aquí los demás datos del comprador que deseas mostrar -->
-                            <strong>Razón Social:</strong> <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?><br>
-                            <strong>Provincia:</strong> <?php echo isset($ventaDetalle[0]['provincia']) ? $ventaDetalle[0]['provincia'] : ''; ?><br>
-                            <strong>Domicilio:</strong> <?php echo isset($ventaDetalle[0]['domicilio']) ? $ventaDetalle[0]['domicilio'] : ''; ?><br>
-                            <strong>CUIT/CUIL:</strong> <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?><br>
-                            <strong>Fecha:</strong> <?php echo isset($ventaDetalle[0]['fecha_venta']) ? $ventaDetalle[0]['fecha_venta'] : ''; ?><br>
-                        </p>
-                    </div>
-                </div>
+    <div class="row">
+    <div class="col-md-6">
+        <h2 class="text-center mb-5">
+            <?php echo ($perfil == 1) ? 'Pedido de Venta' : 'Pedido de Compra'; ?>
+        </h2>
+        <!-- Logo de casa markitos -->
+        <img class="img-fluid" src="<?php echo base_url('assets/img/f9a6a9437f850c9aace8c28fc0df31a1.png'); ?>" alt="logo">
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Datos del Comprador</h5>
+                <p class="datos-cliente">
+                    <strong>Nombre:</strong>
+                    <?php echo isset($ventaDetalle[0]['nombre']) ? $ventaDetalle[0]['nombre'] : ''; ?>
+                    <?php echo isset($ventaDetalle[0]['apellido']) ? $ventaDetalle[0]['apellido'] : ''; ?>
+                    <br>
+
+                    <strong>Razón Social:</strong>
+                    <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?>
+                    <br>
+
+                    <strong>Provincia:</strong>
+                    <?php echo isset($ventaDetalle[0]['provincia']) ? $ventaDetalle[0]['provincia'] : ''; ?>
+                    <br>
+
+                    <strong>Domicilio:</strong>
+                    <?php echo isset($ventaDetalle[0]['domicilio']) ? $ventaDetalle[0]['domicilio'] : ''; ?>
+                    <br>
+
+                    <strong>CUIT/CUIL:</strong>
+                    <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?>
+                    <br>
+
+                    <strong>Fecha:</strong>
+                    <?php echo isset($ventaDetalle[0]['fecha_venta']) ? $ventaDetalle[0]['fecha_venta'] : ''; ?>
+                    <br>
+                </p>
             </div>
         </div>
+    </div>
+</div>
+
 
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
