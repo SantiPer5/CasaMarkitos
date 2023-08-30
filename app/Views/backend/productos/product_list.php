@@ -40,6 +40,17 @@
                             <td><?php echo $prod['producto_id']; ?></td>
                             <td><?php echo $prod['nombre_prod']; ?></td>
                             <td>
+                                <!-- Muestro categoria con un foreach -->
+                                <?php foreach ($categorias as $categoria): ?>
+                                    <?php if ($prod['categoria_id'] == $categoria['categoria_id']): ?>
+                                        <?php echo $categoria['categoria_desc']; ?>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                                
+
+                            </td>
+                            
+                            <!-- <td>
                                 <?php
                                 $categoria = '';
                                 switch ($prod['categoria_id']) {
@@ -64,7 +75,7 @@
                                 }
                                 echo $categoria;
                                 ?>
-                            </td>
+                            </td> -->
                             <td><?php echo $prod['precio']; ?></td>
                             <td><?php echo $prod['descripcion']; ?></td>
                             <td><?php echo $prod['stock']; ?></td>

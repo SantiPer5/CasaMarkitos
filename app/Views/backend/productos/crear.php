@@ -34,14 +34,22 @@
         <form method="post" action="<?php echo base_url('/guardar') ?>" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="categoria_id">Seleccione una Categoria</label>
+                <!-- Muestro categoria con un foreach -->
                 <select name="categoria_id" id="categoria_id" class="form-control">
+                    <?php foreach ($categorias as $categoria): ?> <!-- Usamos un foreach para recorrer e ir mostrando las categorias -->
+                        <option value="<?php echo $categoria['categoria_id']; ?>">
+                        <?php echo $categoria['categoria_desc']; ?></option>
+                    <?php endforeach; ?>
+                </select>
+                
+                <!-- <select name="categoria_id" id="categoria_id" class="form-control">
                     <option value="0">OFERTA</option>
                     <option value="1" <?= set_select('categoria_id', '1') ?>>Articulos de Kiosco</option>
                     <option value="2" <?= set_select('categoria_id', '2') ?>>Bazar</option>
                     <option value="3" <?= set_select('categoria_id', '3') ?>>Electrodomesticos</option>
                     <option value="4" <?= set_select('categoria_id', '4') ?>>Libreria</option>
                     <option value="5" <?= set_select('categoria_id', '5') ?>>Varios</option>
-                </select>
+                </select> -->
             </div>
 
             <div class="form-group">

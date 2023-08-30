@@ -17,6 +17,8 @@ class ProductController extends Controller{
     /* Motrar los productos en lista */
     public function index(){
         $model = new Product_Model();
+        $categoria = new Categoria_Model();
+        $dato['categorias'] = $categoria->orderBy('categoria_id', 'DESC')->findAll();
         $dato['productos'] = $model->orderBy('producto_id', 'DESC')->findAll();
         
         $data['titulo'] = 'Crud_Productos';
@@ -28,11 +30,15 @@ class ProductController extends Controller{
 
 
     public function agregar_producto(){
-        
+        $model = new Product_Model();
+        $categoria = new Categoria_Model();
+        $data['categorias'] = $categoria->orderBy('categoria_id', 'DESC')->findAll();
+        $dato['productos'] = $model->orderBy('producto_id', 'DESC')->findAll();
+
         $data['titulo'] = 'Agregar Producto';
         echo view('front/header', $data);
         echo view('front/navbar');
-        echo view('backend/productos/crear');
+        echo view('backend/productos/crear', $data);
         echo view('front/footer');
 
 
@@ -101,6 +107,9 @@ class ProductController extends Controller{
 
     public function editar($id = null){
         $model = new Product_Model();
+        $categoria = new Categoria_Model();
+        $data['categorias'] = $categoria->orderBy('categoria_id', 'DESC')->findAll(); 
+        
         $data['producto'] = $model->where('producto_id', $id)->first();
 
         $data['titulo'] = 'Editar Producto';
@@ -217,7 +226,30 @@ class ProductController extends Controller{
         session()->setFlashdata('msg', 'Producto no disponible');
         return $this->response->redirect(base_url('/crud_productos'));
     }
-    
+
+    public function editar_categorias(){
+        $model = new Categoria_Model();
+        $data['categorias'] = $model->orderBy('categoria_id', 'DESC')->findAll();
+
+        $data['titulo'] = 'Editar Categorias';
+        echo view('front/header', $data);
+        echo view('front/navbar');
+        echo view('backend/productos/editar_categorias', $data);
+        echo view('front/footer');
+    }
+
+    public function guardar_categoria(){
+        $model = new Categoria_Model();
+        $data = [
+            'categoria_desc' => $this->request->getVar('categoria_desc')
+        ];
+
+        $model->insert($data);
+        session()->setFlashdata('msg', 'Categoria agregada correctamente');
+        return $this->response->redirect(base_url('/crud_categorias'));
+    }
+
+
 
 
 }

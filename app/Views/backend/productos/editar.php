@@ -11,17 +11,17 @@
 <?php endif; ?>
         </div>
         <div class="card-body">
-            <form method="post" action="<?php echo base_url('/actualizar') ?>" enctype="multipart/form-data">
+            <form method="post" action="<?php echo base_url('/actualizar') ?>" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" es para poder subir archivos -->
             <div class="form-group">
                 <label for="categoria_id">Categoria</label>
-                <select name="categoria_id" id="categoria_id" class="form-control">
-                    <option value="1" <?php echo ($producto['categoria_id'] == 1) ? 'selected' : ''; ?>>Articulos de Kiosco</option>
-                    <option value="2" <?php echo ($producto['categoria_id'] == 2) ? 'selected' : ''; ?>>Bazar</option>
-                    <option value="3" <?php echo ($producto['categoria_id'] == 3) ? 'selected' : ''; ?>>Electrodomesticos</option>
-                    <option value="4" <?php echo ($producto['categoria_id'] == 4) ? 'selected' : ''; ?>>Libreria</option>
-                    <option value="5" <?php echo ($producto['categoria_id'] == 5) ? 'selected' : ''; ?>>Varios</option>
-                    <option value="0" <?php echo ($producto['categoria_id'] == 0) ? 'selected' : ''; ?>>OFERTAS</option>
+                <select name="categoria_id" id="categoria_id" class="form-control">  <!-- Creamos un select para mostrar las categorias -->
+                    <?php foreach ($categorias as $categoria): ?> <!-- Usamos un foreach para recorrer e ir mostrando las categorias -->
+                        <option value="<?php echo $categoria['categoria_id']; ?>" <?php echo ($producto['categoria_id'] == $categoria['categoria_id']) ? 'selected' : ''; ?>> 
+                        <?php echo $categoria['categoria_desc']; ?></option>
+                    <?php endforeach; ?>
                 </select>
+                            <!-- editar categorias -->
+            
             </div>
 
                 <div class="form-group">

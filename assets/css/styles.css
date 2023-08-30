@@ -1336,3 +1336,11 @@ table.table.table-striped.tabla-ventas {
     background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
     background-size: cover;
 }
+/* editar categoria */
+
+.editar-categoria {
+    min-width: 95%;
+    min-height: 100vh;
+    background-image: url(../img/usuario/20775473_tp244-bg1-02.jpg);
+    background-size: cover;
+}

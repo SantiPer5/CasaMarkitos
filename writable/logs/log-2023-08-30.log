@@ -1,0 +1,174 @@
+INFO - 2023-08-30 12:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:11 --> Cart Class Initialized
+INFO - 2023-08-30 12:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-30 12:52:47 --> mysqli_sql_exception: Foreign key constraint for table 'producto', record '69' would lead to a duplicate entry in table 'producto_categoria', key 'PRIMARY' in C:\xampp\htdocs\CasaMarkitos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\CasaMarkitos\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `product...', 0)
+#1 C:\xampp\htdocs\CasaMarkitos\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `product...')
+#2 C:\xampp\htdocs\CasaMarkitos\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `product...')
+#3 C:\xampp\htdocs\CasaMarkitos\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `product...', Array, false)
+#4 C:\xampp\htdocs\CasaMarkitos\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CasaMarkitos\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CasaMarkitos\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CasaMarkitos\app\Controllers\ProductController.php(153): CodeIgniter\Model->update('69', Array)
+#8 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(934): App\Controllers\ProductController->actualizar()
+#9 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\CasaMarkitos\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CasaMarkitos\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-30 12:52:47 --> Foreign key constraint for table 'producto', record '69' would lead to a duplicate entry in table 'producto_categoria', key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `producto` SET `nombre_prod` = \'Pila grande Macao x12u.\', `categoria_id` = \'1\', `precio` = \'4500.00\', `descripcion` = \'\', `stock` = \'999\', `estado` = \'1\'
+WHERE `producto`.`producto_id` IN (\'69\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `producto` SET `nombre_prod` = \'Pila grande Macao x12u.\', `categoria_id` = \'1\', `precio` = \'4500.00\', `descripcion` = \'\', `stock` = \'999\', `estado` = \'1\'
+WHERE `producto`.`producto_id` IN (\'69\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `producto` SET `nombre_prod` = \'Pila grande Macao x12u.\', `categoria_id` = \'1\', `precio` = \'4500.00\', `descripcion` = \'\', `stock` = \'999\', `estado` = \'1\'
+WHERE `producto`.`producto_id` IN (\'69\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `producto` SET `nombre_prod` = :nombre_prod:, `categoria_id` = :categoria_id:, `precio` = :precio:, `descripcion` = :descripcion:, `stock` = :stock:, `estado` = :estado:
+WHERE `producto`.`producto_id` IN :producto.producto_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\ProductController.php(153): CodeIgniter\Model->update('69', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->actualizar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 12:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 12:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:03:03 --> Undefined variable $categorias
+in APPPATH\Views\backend\productos\product_list.php on line 44.
+ 1 APPPATH\Views\backend\productos\product_list.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\product_list.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\product_list.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/product_list', [], true)
+ 5 APPPATH\Controllers\ProductController.php(25): view('backend/productos/product_list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:04:39 --> Cart Class Initialized
+INFO - 2023-08-30 13:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:07:47 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(40): view('backend/productos/crear')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:08:32 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-30 13:09:05 --> Undefined variable $id
+in APPPATH\Controllers\ProductController.php on line 36.
+ 1 APPPATH\Controllers\ProductController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Controllers\\ProductController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:09:39 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:09:54 --> Undefined variable $categorias
+in APPPATH\Views\backend\productos\crear.php on line 39.
+ 1 APPPATH\Views\backend\productos\crear.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:10:05 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:13:09 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-30 13:13:11 --> Undefined variable $producto
+in APPPATH\Views\backend\productos\crear.php on line 40.
+ 1 APPPATH\Views\backend\productos\crear.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CasaMarkitos\\app\\Views\\backend\\productos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('backend/productos/crear', [], true)
+ 5 APPPATH\Controllers\ProductController.php(41): view('backend/productos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProductController->agregar_producto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-30 13:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-30 13:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

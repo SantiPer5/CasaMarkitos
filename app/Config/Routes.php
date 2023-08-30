@@ -69,6 +69,10 @@ $routes->post('/actualizar', 'productController::actualizar'); //Actualizar prod
 /* Disponibilidad de productos */
 $routes->get('disponible/(:num)', 'productController::disponible/$1'); //Disponible productos
 $routes->get('no_disponible/(:num)', 'productController::no_disponible/$1'); //No disponible productos
+/* Editar Categorias */
+$routes->get('/crud_categorias', 'ProductController::editar_categorias'); //Listado de categorias
+$routes->post('/guardar_categoria', 'ProductController::guardar_categoria'); //Guardar categorias
+$routes->get('/borrar_categoria/(:num)', 'ProductController::borrar_categoria/$1'); //Borrar categorias
 
 /* Mostrar productos en el Catalogo */
 $routes->get('/catalogo', 'cartController::catalogo');

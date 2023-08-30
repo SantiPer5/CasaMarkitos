@@ -1548,3 +1548,10 @@ INFO - 2023-08-21 21:25:39 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-08-21 21:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-08-21 21:25:41 --> Cart Class Initialized
 INFO - 2023-08-21 21:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:51 --> Cart Class Initialized
+INFO - 2023-08-21 21:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-21 21:27:52 --> Cart Class Initialized
