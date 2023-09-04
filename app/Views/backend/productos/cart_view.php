@@ -118,14 +118,14 @@
         }).then((result) => {
             if (result.isConfirmed) {
                  // Redirige al usuario para confirmar el pedido
-                
-                Swal.fire(
+                window.location.href = "<?php echo base_url('carrito-comprar'); ?>";
+                /* Swal.fire(
                     'Hecho!',
                     'Tu pedido ya fue solicitado, en breve nos comunicaremos via email o whatsapp!',
                     'success'
                     ).then((result) => {
                         window.location.href = "<?php echo base_url('carrito-comprar'); ?>";
-                    })
+                    }) */
                 
             }
         });

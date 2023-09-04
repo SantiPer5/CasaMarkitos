@@ -52,6 +52,13 @@
             <div class="form-group">
               <?php echo form_textarea('mensaje', '', 'placeholder="Mensaje" required'); ?>
             </div>
+            <!-- token ReCaptcha -->
+
+            <div class="form-group">
+                <?php echo form_input('token', '', 'type="hidden" name="token" id="token"'); ?>
+            </div>
+
+            
             <div class="form-group">
               <?php echo form_submit('enviar', 'Enviar'); ?>
             </div>
@@ -68,3 +75,13 @@
     </div>
   </div>
 </section>
+
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LdBBegnAAAAAMPdD7GLvhXKSOxJlVXnZw04pO2S', {action: 'consulta'}).then(function(respuesta_token) {
+        const itoken = document.getElementById('token'); 
+        itoken.value = respuesta_token;
+        console.log({token});
+      });
+  });
+</script>

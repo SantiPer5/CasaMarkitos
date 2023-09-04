@@ -129,10 +129,10 @@
                             <strong>Nombre:</strong> <?php echo isset($ventaDetalle[0]['nombre']) ? $ventaDetalle[0]['nombre'] : ''; ?>
                             <?php echo isset($ventaDetalle[0]['apellido']) ? $ventaDetalle[0]['apellido'] : ''; ?><br>
                             <!-- Agrega aquí los demás datos del comprador que deseas mostrar -->
-                            <strong>Razón Social:</strong> <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?><br>
+                            <!-- <strong>Razón Social:</strong> <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?><br> -->
                             <strong>Provincia:</strong> <?php echo isset($ventaDetalle[0]['provincia']) ? $ventaDetalle[0]['provincia'] : ''; ?><br>
                             <strong>Domicilio:</strong> <?php echo isset($ventaDetalle[0]['domicilio']) ? $ventaDetalle[0]['domicilio'] : ''; ?><br>
-                            <strong>CUIT/CUIL:</strong> <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?><br>
+                            <!-- <strong>CUIT/CUIL:</strong> <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?><br> -->
                             <strong>Fecha:</strong> <?php echo isset($ventaDetalle[0]['fecha_venta']) ? $ventaDetalle[0]['fecha_venta'] : ''; ?><br>
                         </p>
                     </div>

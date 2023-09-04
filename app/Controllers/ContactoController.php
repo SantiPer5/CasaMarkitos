@@ -53,8 +53,9 @@ class ContactoController extends BaseController {
 
 
 
-    public function registrar_consulta(){ // Registrar consulta
+    public function registrar_consulta() {
         $request = \Config\Services::request();
+    
         if ($request->getMethod(true)) { // Si se envió el formulario
             $rules = [
                 'nombre' => 'required|min_length[3]|max_length[50]',
@@ -62,27 +63,48 @@ class ContactoController extends BaseController {
                 'asunto' => 'required|min_length[3]|max_length[50]',
                 'mensaje' => 'required|min_length[3]|max_length[500]'
             ];
-
-            $validations = $this->validate ($rules); // Validar los datos
-
-            if ($validations) { // Si los datos son válidos, se insertan en la base de datos
-                $data = [
-                    'nombre' => $request->getPost('nombre'),
-                    'correo' => $request->getPost('correo'),
-                    'asunto' => $request->getPost('asunto'),
-                    'mensaje' => $request->getPost('mensaje'),
-                    'leido' => 'NO'
-                    
+    
+            // Validar los datos
+            if ($this->validate($rules)) {
+                // Verificar el reCAPTCHA
+                $recaptchaSecretKey = "6LdBBegnAAAAANHSAaU_iLks6JicF1gkfyehhNkI";
+                $recaptchaResponse = $request->getPost('g-recaptcha-response');
+    
+                $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+                $recaptchaData = [
+                    'secret' => $recaptchaSecretKey,
+                    'response' => $recaptchaResponse
                 ];
-
-                $userConsulta = new Consulta_Model();
-                $userConsulta->insert($data);
-                return redirect()->to(base_url('/contacto'))->with('success', '¡Mensaje enviado con éxito!');
-
-            } else { // Si los datos no son válidos, se muestran los errores
-                
+    
+                $ch = curl_init($recaptchaUrl);
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $recaptchaData);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $recaptchaResponseData = curl_exec($ch);
+                curl_close($ch);
+    
+                $recaptchaResponseData = json_decode($recaptchaResponseData);
+    
+                if ($recaptchaResponseData->success) {
+                    // El reCAPTCHA se ha validado correctamente
+                    $data = [
+                        'nombre' => $request->getPost('nombre'),
+                        'correo' => $request->getPost('correo'),
+                        'asunto' => $request->getPost('asunto'),
+                        'mensaje' => $request->getPost('mensaje'),
+                        'leido' => 'NO'
+                    ];
+    
+                    $userConsulta = new Consulta_Model();
+                    $userConsulta->insert($data);
+                    return redirect()->to(base_url('/contacto'))->with('success', '¡Mensaje enviado con éxito!');
+                } else {
+                    // El reCAPTCHA no se ha validado correctamente
+                    return redirect()->to(base_url('/contacto'))->with('error', 'Error de reCAPTCHA. Inténtalo de nuevo.');
+                }
+            } else {
+                // Los datos no son válidos, se muestran los errores
                 $data['validation'] = $this->validator;
-                //Se cargan las vistas con los errores
                 $data['titulo'] = 'Contacto'; 
                 echo view('front/header', $data);
                 echo view('front/navbar');
@@ -90,10 +112,8 @@ class ContactoController extends BaseController {
                 echo view('front/footer');
                 return;
             }
-
-            
-
         }
     }
+    
 }
 

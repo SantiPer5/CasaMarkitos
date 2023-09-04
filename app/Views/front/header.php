@@ -23,7 +23,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/wsp_btn.css')?>">
-   
+    <!-- Scrip ReCaptcha -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdBBegnAAAAAMPdD7GLvhXKSOxJlVXnZw04pO2S"></script> -->
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

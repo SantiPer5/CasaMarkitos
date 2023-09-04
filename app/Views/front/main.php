@@ -57,7 +57,7 @@
 
     <div class="principal">
         <div class="container title-container">
-        <h2><?php echo "¡Hola " . $nombre . ", bienvenido a nuestro mayorista y minorista online!!" ?></h2>
+        <h2><?php echo "¡Hola " . $nombre . ", bienvenido a nuestro mayorista online!!" ?></h2>
         </div>
 
        <!--  <div class="container principal-main">
@@ -127,26 +127,23 @@
         </div>
     </div> 
 
-    <!-- <div class="principal">
+    <div class="principal">
             <div class="container title-container">
-                <h2>MAYORISTA Y MINORISTA ONLINE!!!</h2>
+                <h2>MAYORISTA ONLINE!</h2>
             </div>
 
             <div class="container principal-main">
-                <p>Bienvenido a nuestra empresa CasaMarkitos. Somos una empresa familiar que se dedica a ofrecer una
-                amplia variedad de productos para el hogar, la oficina y la vida cotidiana. Ofrecemos una amplia gama de
-                productos, desde artículos de papelería y librería hasta productos de bazar y artículos para el hogar.</p>
+                <p>Bienvenidos a nuestra página web, aquí podrán encontrar precios mayoristas de todos nuestros productos. Dirigiéndose a "Catálogo" encontrarán toda la lista con sus respectivos precios.
+No olvides registrarte para poder llenar el carrito, ni tampoco de resolver tus dudas con el botón de WhatsApp, responderemos lo antes posible.</p>
 
-                <p> Nuestro principal objetivo es ofrecer productos de alta calidad a precios competitivos para satisfacer las
-                necesidades de nuestros clientes. Todos nuestros productos son seleccionados cuidadosamente y provienen de
-                proveedores confiables y de renombre en la industria.</p>
+                <p> CONSULTAR DESCUENTOS EXCLUSIVOS!!!</p>
             </div>
-        </div> -->
+        </div>
 
     <!-- Carrousel productos -->
     <div class="ofertas">
         <div class="container title-container">
-            <h3>NUESTRAS OFERTAS IMPERDIBLES!!!</h3>
+            <h3>SUPER OFERTAS IMPERDIBLES!!!</h3>
         </div>
         
         <!-- Swiper -->

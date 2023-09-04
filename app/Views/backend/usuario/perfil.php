@@ -61,17 +61,17 @@
                             </div>
 
                             <div class="col-md-6">
-                                <h2>Datos de Facturación</h2>
+                                <h2>Datos adicionales</h2>
                                 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="rsocial">Razón Social</label>
                                     <input type="text" name="rsocial" id="rsocial" class="form-control" value="<?= $usuario['rsocial'] ?>">
-                                </div>
+                                </div> -->
                                 
                                 <div class="form-group">
-                                    <label for="domicilio">Domicilio Fiscal</label>
+                                    <label for="domicilio">Domicilio</label>
                                     <input type="text" name="domicilio" id="domicilio" class="form-control" value="<?= $usuario['domicilio'] ?>">
-                                </div>
+                                </div> 
                                 
                                 <div class="form-group">
                                     <label for="provincia">Provincia</label>
@@ -83,7 +83,7 @@
                                     <input type="text" name="cpostal" id="cpostal" class="form-control" value="<?= $usuario['cpostal'] ?>">
                                 </div>
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="cuit">Número de Cuil/Cuit</label>
                                     <input type="text" name="cuit" id="cuit" class="form-control" value="<?= $usuario['cuit'] ?>">
                                 </div>
@@ -91,7 +91,7 @@
                                 <div class="form-group">
                                     <label for="condicioniva">Condicion de IVA</label>
                                     <input type="text" name="condicioniva" id="condicioniva" class="form-control" value="<?= $usuario['condicioniva'] ?>">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 

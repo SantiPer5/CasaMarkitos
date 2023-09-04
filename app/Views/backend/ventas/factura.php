@@ -24,9 +24,9 @@
                     <?php echo isset($ventaDetalle[0]['apellido']) ? $ventaDetalle[0]['apellido'] : ''; ?>
                     <br>
 
-                    <strong>Razón Social:</strong>
+                    <!-- <strong>Razón Social:</strong>
                     <?php echo isset($ventaDetalle[0]['rsocial']) ? $ventaDetalle[0]['rsocial'] : ''; ?>
-                    <br>
+                    <br> -->
 
                     <strong>Provincia:</strong>
                     <?php echo isset($ventaDetalle[0]['provincia']) ? $ventaDetalle[0]['provincia'] : ''; ?>
@@ -36,9 +36,9 @@
                     <?php echo isset($ventaDetalle[0]['domicilio']) ? $ventaDetalle[0]['domicilio'] : ''; ?>
                     <br>
 
-                    <strong>CUIT/CUIL:</strong>
+                    <!-- <strong>CUIT/CUIL:</strong>
                     <?php echo isset($ventaDetalle[0]['cuit']) ? $ventaDetalle[0]['cuit'] : ''; ?>
-                    <br>
+                    <br> -->
 
                     <strong>Fecha:</strong>
                     <?php echo isset($ventaDetalle[0]['fecha_venta']) ? $ventaDetalle[0]['fecha_venta'] : ''; ?>

@@ -31,7 +31,7 @@
                     <li><i class="fas"></i><a href="<?php echo base_url('/contacto') ?>">Dejanos un mensaje...</a></li>
                     <li><i class="fas fa-map-marker-alt"></i> Av. 25 de Mayo y Sarmiento, El Colorado, Formosa, Argentina</li>
                     <li><i class="fas"></i> Teléfono: +54 0370 4204158</li>
-                    <li><i class="fas"></i> Email: markitock@gmail.com</li>
+                    <li><i class="fas"></i> Email: ventas@casamarkitos.com</li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-6 mb-md-0 mb-4">

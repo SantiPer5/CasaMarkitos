@@ -147,12 +147,12 @@ class AuthController extends Controller
                     'nombre' => 'required|min_length[3]|max_length[50]',
                     'apellido' => 'required|min_length[3]|max_length[50]',
                     'telefono' => 'required|min_length[8]|max_length[20]',
-                    'rsocial' => 'min_length[3]|max_length[100]',
+                    /* 'rsocial' => 'min_length[3]|max_length[100]', */
                     'domicilio' => 'min_length[5]|max_length[200]',
                     'provincia' => 'min_length[3]|max_length[50]',
                     'cpostal' => 'min_length[4]|max_length[10]',
-                    'cuit' => 'min_length[10]|max_length[12]',
-                    'condicioniva' => 'min_length[3]|max_length[100]',
+                    /* 'cuit' => 'min_length[10]|max_length[12]', */
+                    /* 'condicioniva' => 'min_length[3]|max_length[100]', */
                 ];
         
                 if ($this->validate($rules)) {

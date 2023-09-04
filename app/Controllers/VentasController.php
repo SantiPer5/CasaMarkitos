@@ -41,7 +41,7 @@ class VentasController extends Controller{
         
         $datosUsuario = $userModel->find($id_usuario_logueado); // Obtengo los datos del cliente
         
-        if (empty($datosUsuario['rsocial'])) {
+        if (empty($datosUsuario['domicilio'])) {
             $mensaje = "Por favor complete los datos de facturación antes de realizar una compra";
             session()->setFlashdata('mensaje_data', $mensaje);
             // Redireccionar de vuelta al carrito o a la página correspondiente
